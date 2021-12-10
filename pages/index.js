@@ -21,26 +21,47 @@ export default function Home() {
 
       <main>
 
+        <div className="bg">
+        
         <Container fluid className="d-flex flex-column px-5">
 
-          <Row className="justify-content-center align-items-center px-5">
+        
+          <Row className="justify-content-center align-items-center px-5 mx-5">
 
-            <Col className="px-5">
+            <Col className="px-5 pb-5 mx-3">
             <h1 className="text-white text-drop mb-3">Raise more with Causable</h1>
-            <p className="lead text-grey text-tight-drop ms-2">Increase your charitable fundraising revenue with our all-in-one platform.</p>
+            <p className="lead text-grey text-tight-drop ms-2 mb-4">Increase your charitable fundraising revenue with our all-in-one platform.</p>
+            <Row>
+              <Col>
+              <Link href="#" >
+                <Button className="btn btn-blue tight-drop d-arrow ms-2 me-2">
+                  LEARN MORE
+                </Button>
+              </Link>
+              <Link href="#" >
+                <Button className="btn btn-outline tight-drop video ms-2 me-2">
+                  WATCH OUR VIDEO
+                </Button>
+              </Link>
+              </Col>
+            </Row>
             </Col>
 
             <Col>
-            <img className="hero-img mt-5" src="/landing-mock.png" alt="Chat button"/>
+            <img className="hero-img" src="/landing-mock.png" alt="Chat button"/>
             </Col>
 
           </Row>
-        
+          
         </Container>
+
+        </div>
 
       </main>
 
       <Footer />
     </Container>
+
+
   )
 }

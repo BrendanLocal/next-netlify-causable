@@ -17,9 +17,9 @@ import Link from 'next/link'
 export default function Header() {
   return (
 
-  <Container fluid className="fixed d-flex header">
+  <Container fluid className="fixed header">
       
-      <Row className="d-flex">
+      <Row>
 
           <Col>
 
@@ -29,7 +29,7 @@ export default function Header() {
 
           </Col>
 
-        <Col className="align-items-center">
+        <Col>
           
          <div className="headerNav">
          

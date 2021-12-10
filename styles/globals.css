@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  padding: 0;
+  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,23 @@ main {
 }
 
 .hero-img {
-  max-height: 750px;
+  max-height: 800px;
+  margin-top: 100px!important;
+}
+
+/* Background */
+
+.bg {
+  background-image: url('/BG.png');
+  background-position: 0% -11.5%;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 /* General */
@@ -92,10 +108,10 @@ p.lead {
 /* Buttons */
 
 Button.btn {
-  padding: 10px 15px 10px 15px!important;
-  border-radius: 6px;
-  font-size: 13px;
-  font-weight: 600;
+  padding: 8px 12px 8px 12px!important;
+  border-radius: 8px!important;
+  font-size: 16px;
+  font-weight: 500;
   letter-spacing: .05rem;
   transition: all .5s;
   cursor: pointer;
@@ -103,6 +119,7 @@ Button.btn {
 
 Button.btn-blue {
   background-color:#237CC1;
+  border: 2px solid #237CC1;
   color: #fff;
 }
 
@@ -125,12 +142,33 @@ Button.btn-outline {
   color: #fff;
 }
 
+.d-arrow:after {
+  content: url("/r-arrow.svg");
+  margin-left: 5px;
+  display: inline-block;
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+.video:after {
+  content:"";
+  background: url("/video.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 5px;
+  top:2px;
+}
+
 /* Header */
 
 .header {
   position: fixed;
   height: 90px;
-  padding: 30px!important;
+  padding: 35px!important;
   top: 0;
   left:0;
   z-index: 99;
@@ -152,7 +190,7 @@ Button.btn-outline {
 
 
   .headerNav a:nth-child(4) {
-    margin-right: 25px;
+    margin-right: 20px;
   }
 
 
