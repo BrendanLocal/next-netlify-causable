@@ -31,7 +31,7 @@ export default function Home() {
             <Col className="px-5 pb-5 mx-3">
             <h1 className="text-white text-drop mb-3">Raise more with Causable</h1>
             <p className="lead text-grey text-tight-drop ms-2 mb-4">Increase your charitable fundraising revenue with our all-in-one platform.</p>
-            <Row>
+            <Row className="pb-5">
               <Col>
               <Link href="#" >
                 <Button className="btn btn-blue tight-drop d-arrow ms-2 me-2">
