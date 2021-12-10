@@ -5,23 +5,60 @@ import { GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import FormControl from 'react-bootstrap/FormControl';
 import Link from 'next/link'
 
 export default function Header() {
   return (
-  
-  <React.Fragment>
-      <div className="container-fluid header logoHeader">
-        <div className="row ">
-          <div className="col">
+
+  <Container fluid className="fixed header">
+      
+      <Row>
+
+          <Col>
             <Link href="/">
             <img className="logo" src="/CAUSABLElogo.svg" alt="Causablelogo"/>
             </Link>
+          </Col>
+
+        <Col>
+         <div className="headerNav">
+         
+          <Link href="#" >
+            <a className="text-white">
+              Why Causable? 
+            </a>
+          </Link>
+          <Link href="#" >
+            <a className="text-white">
+              What You Get
+            </a>
+          </Link>
+          <Link href="#" >
+            <a className="text-white">
+            How To Work With Us
+            </a>
+          </Link><Link href="#" >
+            <a className="text-white">
+              Calculate Potential Revenue
+            </a>
+          </Link>
+          <Link href="#" >
+            <Button className="btn btn-outline arrow">
+              GET STARTED
+            </Button>
+          </Link>
           </div>
-        </div>
-        </div>
+        </Col>
 
-  </React.Fragment>
+      </Row>
 
+  </Container>
+  
   )
 }

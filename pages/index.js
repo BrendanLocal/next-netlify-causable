@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Causable</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />

@@ -4,8 +4,7 @@ body {
   color: #fff;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -36,36 +35,110 @@ code {
   align-items: center;
 }
 
+/* General */
+
+.fixed {
+  position: fixed;
+}
+
 /* Text Styles */
 
 /* Colours */
 
+.text-white {
+  color: #fff;
+}
+
+.dark-blue {
+  background-color: #0F3450;
+}
+
 /* Buttons */
+
+.btn {
+  padding: 10px 15px 10px 15px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .05rem;
+  margin-bottom: 10px;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.btn-outline {
+  border: 2px solid #237CC1;
+  border-radius: 6px;
+  color: #fff;
+  background-color:rgba(0, 0, 0, 0);
+}
+
+.btn-text {
+  background-color:rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.arrow:after {
+  content: url("/r-arrow.svg");
+  margin-left: 5px;
+  display: inline-block;
+  color: #fff;
+}
 
 /* Header */
 
 .header {
   position: fixed;
   height: 90px;
-  padding: 20px;
+  padding: 30px;
   top: 0;
   left:0;
   z-index: 99;
   }
 
-  .logoHeader {
-    width: 10vw;
+  .headerNav {
+    padding: 25px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 101;
+  }
+
+  .headerNav a {
+    margin: 0px 10px 0px 10px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .headerNav a:nth-child(4) {
+    margin-right: 20px;
   }
 
   .logo {
     height: 30px;
     max-height: 100%;
     max-width: initial;
-    text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);
     }
     
     .logo:hover {
       cursor: pointer;
     }
+
+
+/* Breakpoints */
+
+    @media (min-width: 992px) {
+      
+     }
+
+
+    @media (min-width: 768px) {
+
+     }
+
+
+    @media (min-width: 576px) { 
+
+     }
 
  
