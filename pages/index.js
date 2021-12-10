@@ -1,18 +1,18 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from 'next/head';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
 import React, { useState, useRef, useEffect } from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useRouter } from 'next/router';
-import Button from 'react-bootstrap/Button';
-
+import Button from 'react-bootstrap/Button'
 
 export default function Home() {
   return (
-    <div className="container">
+
+    <Container className="bg-dark-blue">
       <Head>
         <title>Causable</title>
         <link rel="icon" href="/favicon.ico" />
@@ -20,15 +20,27 @@ export default function Home() {
       <Header />
 
       <main>
-        <Container>
-        <h1>G-day</h1>
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+
+        <Container fluid className="d-flex flex-column px-5">
+
+          <Row className="justify-content-center align-items-center px-5">
+
+            <Col className="px-5">
+            <h1 className="text-white text-drop mb-3">Raise more with Causable</h1>
+            <p className="lead text-grey text-tight-drop ms-2">Increase your charitable fundraising revenue with our all-in-one platform.</p>
+            </Col>
+
+            <Col>
+            <img className="hero-img mt-5" src="/landing-mock.png" alt="Chat button"/>
+            </Col>
+
+          </Row>
+        
         </Container>
+
       </main>
 
       <Footer />
-    </div>
+    </Container>
   )
 }

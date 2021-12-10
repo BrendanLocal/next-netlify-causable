@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, MouseEvent, Component} from 'react';
 import { render } from 'react-dom';
 import Container from 'react-bootstrap/Container';
@@ -16,17 +17,20 @@ import Link from 'next/link'
 export default function Header() {
   return (
 
-  <Container fluid className="fixed header">
+  <Container fluid className="fixed d-flex header">
       
-      <Row>
+      <Row className="d-flex">
 
           <Col>
+
             <Link href="/">
             <img className="logo" src="/CAUSABLElogo.svg" alt="Causablelogo"/>
             </Link>
+
           </Col>
 
-        <Col>
+        <Col className="align-items-center">
+          
          <div className="headerNav">
          
           <Link href="#" >
@@ -49,12 +53,21 @@ export default function Header() {
             </a>
           </Link>
           <Link href="#" >
-            <Button className="btn btn-outline arrow">
+            <Button className="btn btn-outline tight-drop arrow">
               GET STARTED
             </Button>
           </Link>
           </div>
-        </Col>
+
+          </Col>
+
+          <Col>
+
+          <Link href="/">
+            <img className="chat-btn" src="/chat-btn.svg" alt="Chat button"/>
+            </Link>
+            
+          </Col>
 
       </Row>
 
