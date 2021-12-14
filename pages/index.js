@@ -71,7 +71,7 @@ export default function Home() {
         <Container fluid id="why" className="v-full bg-dgnl c-drag px-xl-5 pb-5 mb-5">
           <Row className="align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 pb-5 mx-xl-5 mx-lg-4 ">
 
-            <Col xl={5} lg={5} md={5} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 ">
+            <Col xl={5} lg={5} md={5} sm={12} className="px-xl-5 ps-lg-4 pt-lg-0 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 ">
               <h2 className="text-white text-drop mb-3">Why Causable?</h2>
               <p className="text-grey mb-3 bold ms-1 text-tight-drop">Causable’s electronic raffle technology and marketing platform provides your charitable organizations with unparalleled fundraising capacity in a secure and interactive manner.</p>
               <object className="d-block d-sm-none" type="image/svg+xml" data="/Causable-Animation-ENG.svg" alt="Causable platform animation" />
