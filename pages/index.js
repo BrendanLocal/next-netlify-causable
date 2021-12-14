@@ -29,7 +29,7 @@ export default function Home() {
 
             <Col xl={6} lg={7} md={7} sm={12} className="px-xl-5 px-lg-5 pb-lg-5 mb-lg-5 pb-md-2 mb-md-2 px-3 mt-md-0 mt-2">
               <h1 className="text-white text-drop mb-3 mt-md-0 mt-5">Raise <br /> more with Causable</h1>
-              <p className="lead text-grey text-tight-drop pe-xl-4 ms-1 mb-4">Increase your charitable fundraising revenue with our all-in-one platform.</p>
+              <p className="lead text-grey text-tight-drop pe-4 ms-1 mb-4">Increase your charitable fundraising revenue with our all-in-one platform.</p>
               <Row className="pb-md-5 pb-3 mb-xl-5 d-none d-sm-block">
                 <Col>
                   <Link href="#">
