@@ -16,11 +16,15 @@ main {
   z-index:0;
 }
 
-/* Hero */
+/* Graphics */
 
 .hero-img {
   max-height: 45rem;
   border-radius: 10px;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.45);
+}
+
+.dash-img {
   box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.45);
 }
 
