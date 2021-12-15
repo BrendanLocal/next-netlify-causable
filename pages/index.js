@@ -99,7 +99,7 @@ export default function Home() {
           </Row>
         </Container>
 
-        <Container fluid id="what" className="v-full z-0 bg-grad c-drag ps-xl-5 pb-5 mb-5">
+        <Container fluid id="what" className="v-full z-0 bg-grad c-drag-3 ps-xl-5 pb-5 mb-5">
 
           <Row id="what-1" className="align-items-center d-flex ps-md-5 ps-4 pe-lg-0 pe-md-0 pb-5 ms-xl-5 ms-lg-4">
 
@@ -194,17 +194,17 @@ export default function Home() {
             </Col>
 
             <Col md={12} sm={12} className="p-0 m-0 d-block d-lg-none">
-            <Image fluid className="support-img p-0" src="/ongoing-support.svg" alt="50/50 results" />
+            <Image fluid className="support-img p-0" src="/ongoing-support.svg" alt="Ongoing support" />
             </Col>
 
             <Col lg={7} className="p-0 d-none d-lg-block">
-            <Image fluid className="support-img p-0" src="/ongoing-support.svg" alt="50/50 results" />
+            <Image fluid className="support-img p-0" src="/ongoing-support.svg" alt="Ongoing support" />
             </Col>            
           </Row>  
         </Container>
 
-        <Container fluid id="how" className="v-150 bg-dgnl c-drag-2 px-xl-5 pb-5 mb-5">
-          <Row className="align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 py-5 mb-5 mx-xl-5 mx-lg-4">
+        <Container fluid id="how" className="v-150 bg-dgnl c-drag-2 px-xl-5 pb-xl-3 pb-5 mb-5">
+          <Row className="align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 py-5  mx-xl-5 mx-lg-4">
 
             <Col lg={5} md={6} sm={12} className="ps-xl-5 ps-lg-4 pe-lg-0 pe-md-4 py-md-5 mb-md-0 mb-3">
               <h2 className="text-white text-drop mb-3">How To Work With Us</h2>
@@ -244,6 +244,51 @@ export default function Home() {
             </Col>
 
           </Row>
+        </Container>
+
+        <Container fluid id="how" className="v-150 z-0 c-drag-3 bg-grad px-xl-5 pb-xl-3 pb-5 mb-5">
+          <Row className="justify-content-center align-items-center d-flex px-md-5 px-4 py-5 my-3 mx-xl-5 mx-lg-4">
+            <Col lg={9} sm={12} className="px-xl-5 px-lg-4">
+              <h2 className="text-white text-center text-drop mb-5">Our Partners</h2>
+              <div className="d-flex justify-content-between align-items-center">          
+                <Image fluid className="col-3 pe-4" src="/upei-logo.svg" alt="UPEI logo" />    
+                <Image fluid className="col-3" src="/mount-logo.svg" alt="Mount Academy logo" />  
+                <Image fluid className="col-3 " src="/bgc-logo.svg" alt="Boys &amp; Girls Club Logo" />                 
+              </div>
+              <hr/>
+              <Row className="text-grey mt-4">
+                <Col>
+                <h5 className="mb-1">Universities</h5>
+                <p className="mb-4">UPEI Panthers</p>
+                <h5 className="mb-1">Private Schools</h5>
+                <p className="mb-4">The Mount Academy</p>
+                <h5 className="mb-1">Boys and Girls Clubs</h5>
+                <p className="mb-4">bgc Charlottetown</p>
+                <h5 className="mb-1">Minor Sports</h5>
+                <p className="mb-4">North River Minor Hockey</p>
+                </Col>
+                <Col>
+                <h5 className="mb-1">Home &amp; School</h5>
+                <p>Charlottetown Rural Senior High School</p>
+                <p>Colonel Gray Senior High School</p>
+                <p>Birchwood Intermediate School</p>
+                <p>Donagh Regional School</p>
+                <p> Glen Stewart Primary School</p>
+                <p>Gulf Shore Consolidated School</p>
+                <p> L. M. Montgomery Elementary School</p>
+                <p> Parkdale Elementary School</p>
+                <p> Queen Charlotte Intermediate School</p>
+                <p>Spring Park Elementary School</p>
+                <p>Stonepark Intermediate School</p>
+                <p>Stratford Elementary School</p>
+                <p>West Kent Elementary School</p>
+                <p>West Royalty Elementary School</p>
+                </Col>
+              </Row>
+
+            </Col>
+          </Row>
+        
         </Container>
 
         </main>

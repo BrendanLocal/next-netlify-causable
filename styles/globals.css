@@ -16,68 +16,6 @@ main {
   z-index:0;
 }
 
-/* Graphics */
-
-.hero-img {
-  max-height: 45rem;
-  border-radius: 10px;
-  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.45);
-}
-
-.dash-img {
-  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.45);
-  border-radius: 15px 0px 0px 15px;
-}
-
-.app-img {
-  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.45);
-  border-radius: 8px 8px 8px 8px;
-}
-
-.app-img-3 {
-  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.45);
-  border-radius: 8px 0px 0px 8px;
-}
-
-.support-img {
-  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.45);
-  border-radius: 10px 0px 0px 10px;
-}
-
-/* General */
-
-hr, .hr {
-  border-bottom: 2px solid #237CC1!important;
-}
-
-.fixed {
-  position: fixed;
-}
-
-.z-999 {
-  z-index: 999!important;
-  position: relative;
-}
-
-.z-0 {
-  z-index: 0!important;
-}
-
-.text-drop {
-  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
-}
-
-.text-tight-drop {
-  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
-}
-
-.tight-drop {
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-}
-
-.drop {
-  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.45);
-}
 
 /* Text Styles */
 
@@ -85,6 +23,8 @@ p {
   font-size: 16px!important;
   letter-spacing: .01rem;
   font-weight: 300;
+  line-height: 21px;
+  margin-bottom: 7px!important;
 }
 
 p.bold {
@@ -103,6 +43,7 @@ li {
   font-size: 16px!important;
   letter-spacing: .01rem;
   font-weight: 300;
+  line-height: 21px;
 }
 
 h1, .h1 {
@@ -138,6 +79,14 @@ h4, .h4 {
   font-size: calc(1rem + 1.5vw)!important;
   line-height: calc(1.3rem + 1.5vw)!important;
   letter-spacing: -0.02em!important;
+}
+
+h5, .h5 {
+  font-family: 'Interstate', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px!important;
+  letter-spacing: .02rem;
 }
 
 h6, .h6 {
@@ -249,6 +198,69 @@ Button.btn-outline.active, Button.btn-outline:focus, Button.btn-outline:visited,
   top:2px;
 }
 
+/* Images/Graphics */
+
+.hero-img {
+  max-height: 45rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.45);
+}
+
+.dash-img {
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.45);
+  border-radius: 15px 0px 0px 15px;
+}
+
+.app-img {
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.45);
+  border-radius: 8px 8px 8px 8px;
+}
+
+.app-img-3 {
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.45);
+  border-radius: 8px 0px 0px 8px;
+}
+
+.support-img {
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.45);
+  border-radius: 10px 0px 0px 10px;
+}
+
+/* General */
+
+hr, .hr {
+  border-bottom: 2px solid #237CC1!important;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.z-999 {
+  z-index: 999!important;
+  position: relative;
+}
+
+.z-0 {
+  z-index: 0!important;
+}
+
+.text-drop {
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.text-tight-drop {
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.tight-drop {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.drop {
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.45);
+}
+
 /* Header */
 
 .header {
@@ -330,7 +342,12 @@ Button.btn-outline.active, Button.btn-outline:focus, Button.btn-outline:visited,
 
 .c-drag-2 {
   margin-top: -8rem;
-  padding-top: 10rem;
+  padding-top: 11rem;
+}
+
+.c-drag-3 {
+  margin-top: -16rem;
+  padding-top: 13rem;
 }
 
 .v-full {
@@ -409,9 +426,13 @@ img {
 
   .c-drag-2 {
     margin-top: -14rem;
-    padding-top: 11rem;
+    padding-top: 8rem;
   }
 
+  .c-drag-3 {
+    margin-top: -13rem;
+    padding-top: 10rem;
+  }
 
       
 }
@@ -441,7 +462,12 @@ img {
   }
 
   .c-drag-2 {
-    margin-top: -12rem;
+    margin-top: -11rem;
+    padding-top: 7rem;
+  }
+
+  .c-drag-3 {
+    margin-top: -15rem;
     padding-top: 10rem;
   }
 
@@ -459,6 +485,11 @@ img {
   .c-drag-2 {
     margin-top: -12rem;
     padding-top: 14rem;
+  }
+
+  .c-drag-3 {
+    margin-top: -20rem;
+    padding-top: 17rem;
   }
 
   .well {
