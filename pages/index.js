@@ -11,6 +11,7 @@ import Image from 'react-bootstrap/Image';
 import { useRouter } from 'next/router';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Placeholder from 'react-bootstrap/Placeholder'
 
 
 export default function Home() {
@@ -85,6 +86,9 @@ export default function Home() {
 
             <Col xl={6} lg={5} md={5} sm={12} className="p-xl-5 py-lg-5 px-lg-4 d-flex justify-content-center">
               <Image fluid className="hero-img mt-5 me-xl-5" src="/landing-mock.svg" alt="Image of Causable app" />
+              <Placeholder as="Image" animation="glow">
+                <Placeholder xl={6} lg={5} md={5} sm={12} />
+              </Placeholder>
             </Col>
 
           </Row>
