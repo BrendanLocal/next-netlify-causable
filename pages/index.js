@@ -204,8 +204,8 @@ export default function Home() {
           </Row>  
         </Container>
 
-        <Container fluid id="how" className="v-150 bg-dgnl c-drag-2 px-xl-5 pb-xl-3 pb-5 mb-5">
-          <Row className="align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 py-5  mx-xl-5 mx-lg-4">
+        <Container fluid id="how" className="v-150 bg-dgnl c-drag-2 px-xl-5 pb-xl-0 pb-5 mb-5">
+          <Row className="align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 py-5 pb-xl-0 mb-xl-0 mx-xl-5 mx-lg-4">
 
             <Col lg={5} md={6} sm={12} className="ps-xl-5 ps-lg-4 pe-lg-0 pe-md-4 py-md-5 mb-md-0 mb-3">
               <h2 className="text-white text-drop mb-3">How To Work With Us</h2>
@@ -293,7 +293,7 @@ export default function Home() {
         
         </Container>
 
-        <Container fluid id="calculate" className="v-135 bg-mix c-drag-4 px-xl-5 pb-xl-3 pb-5">
+        <Container fluid id="calculate" className="v-135 bg-mix c-drag-4 px-xl-5 pb-5">
         <Row className="justify-content-center align-items-center d-flex px-md-5 px-4 mt-3 mx-xl-5 mx-lg-4 mb-5 pt-md-5">
             <Col sm={12} className="px-xl-5 px-lg-4">
               <h2 className="text-white text-center text-drop mb-3 d-none d-md-block">Calculate Potential Revenue</h2>
