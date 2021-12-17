@@ -5,6 +5,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import { useRouter } from 'next/router';
@@ -32,7 +33,7 @@ export default function Home() {
               <p className="lead text-grey text-tight-drop pe-4 ms-1 mb-4">Increase your charitable fundraising revenue with our all-in-one platform.</p>
               <Row className="pb-md-5 pb-3 mb-xl-5 d-none d-sm-block">
                 <Col>
-                  <Link href="#">
+                  <Link href="#why">
                     <Button className="btn btn-blue tight-drop d-arrow m-1">
                       LEARN MORE
                     </Button>
@@ -46,7 +47,7 @@ export default function Home() {
               </Row>
               <Row className="pb-md-5 pb-3 mb-xl-5 d-block d-sm-none">
                 <Col className="d-grid gap-2">
-                  <Link href="#">
+                  <Link href="#why">
                     <Button className="btn btn-blue tight-drop d-arrow m-1">
                       LEARN MORE
                     </Button>
@@ -68,7 +69,7 @@ export default function Home() {
         </Container>
 
 
-        <Container fluid id="why" className="v-full bg-dgnl c-drag px-xl-5 pb-5 mb-5">
+        <Container fluid id="why" className="v-full bg-dgnl c-drag px-xl-5 pb-5 mb-5 ">
           <Row className="align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 pb-5 mx-xl-5 mx-lg-4 ">
 
             <Col xl={5} lg={5} md={5} sm={12} className="px-xl-5 ps-lg-4 pt-lg-0 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 ">
@@ -77,15 +78,15 @@ export default function Home() {
               <object className="d-block d-sm-none" type="image/svg+xml" data="/Causable-Animation-ENG.svg" alt="Causable platform animation" />
               <p className="text-grey mb-4 ms-1 text-tight-drop">Our mobile playing app allows anyone in your area to play your electronic raffle via their mobile device or computer --  expanding your raffle’s reach and fundraising potential.</p>
               <div className="d-none d-sm-block">
-                <Link href="#">
-                  <Button className="btn btn-outline tight-drop d-arrow ms-1 mb-md-3 mb-0">
+                <Link href="#what">
+                  <Button className="btn btn-outline tight-drop d-arrow mb-md-3 mb-0">
                     WHAT YOU GET
                   </Button>
                 </Link>
               </div>
               <div className="d-grid gap-2 mb-5">
-                <Link href="#">
-                  <Button className="btn btn-outline tight-drop d-arrow ms-1 pb-5 mb-5 mb-0 d-block d-sm-none">
+                <Link href="#what">
+                  <Button className="btn btn-outline tight-drop d-arrow pb-5 mb-5 mb-0 d-block d-sm-none">
                     WHAT YOU GET
                   </Button>
                 </Link>
@@ -163,7 +164,7 @@ export default function Home() {
             <Col xl={5} lg={5} md={8} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-2 pe-lg-4 pe-5">
               <h6 className="text-blue text-tight-drop mb-3 mt-5">WHAT YOU GET</h6>
               <h3 className="text-white text-drop mb-3">Ongoing Support</h3>
-              <ul className="text-grey">
+              <ul className="text-grey text-tight-drop">
                 <li className="mb-2">
                 Technical Support
                 </li>
@@ -178,14 +179,14 @@ export default function Home() {
                 </li>
               </ul>
               <div className="d-none d-sm-block">
-                <Link href="#">
+                <Link href="#how">
                   <Button className="btn btn-outline tight-drop d-arrow ms-1 mb-0">
                     HOW TO WORK WITH US
                   </Button>
                 </Link>
               </div>
               <div className="d-grid gap-2 mb-5">
-                <Link href="#">
+                <Link href="#how">
                   <Button className="btn btn-outline tight-drop d-arrow ms-2 pb-5 mb-0 d-block d-sm-none">
                   HOW TO WORK WITH US
                   </Button>
@@ -215,10 +216,10 @@ export default function Home() {
             </Col>
 
             <Col lg={{ span: 6, offset: 1 }} md={5} sm={12} className="well ms-lg-5 mb-md-0 mb-5">
-              <h4 class="text-white">It's so easy to get started!</h4>
+              <h4 class="text-white text-drop">It's so easy to get started!</h4>
               <hr />
-              <h6 class="text-blue">STEP 1</h6>
-              <p class="lead text-grey mb-3">Partner with Causable</p>
+              <h6 class="text-blue text-tight-drop">STEP 1</h6>
+              <p class="lead text-grey text-drop mb-3">Partner with Causable</p>
               <div className="d-none d-sm-block">
                 <Link href="#">
                   <Button className="btn btn-blue tight-drop arrow">
@@ -234,30 +235,31 @@ export default function Home() {
                 </Link>
               </div>
               <hr />
-              <h6 class="text-blue">STEP 2</h6>
-              <p class="lead text-grey mb-2">Get your lottery license</p>
-              <p class="text-grey mb-5"><span className="bold">Don’t worry!</span> We will help you with that.</p>
+              <h6 class="text-blue text-tight-drop">STEP 2</h6>
+              <p class="lead text-grey text-drop mb-2">Get your lottery license</p>
+              <p class="text-grey text-tight-drop mb-5"><span className="bold">Don’t worry!</span> We will help you with that.</p>
               <hr />
-              <h6 class="text-blue">STEP 3</h6>
-              <p class="lead text-grey">Start promoting</p>
+              <h6 class="text-blue text-tight-drop">STEP 3</h6>
+              <p class="lead text-drop text-grey">Start promoting</p>
               
             </Col>
 
           </Row>
         </Container>
 
-        <Container fluid id="how" className="v-150 z-0 c-drag-3 bg-grad px-xl-5 pb-xl-3 pb-5 mb-5">
-          <Row className="justify-content-center align-items-center d-flex px-md-5 px-4 py-5 my-3 mx-xl-5 mx-lg-4">
+        <Container fluid id="partners" className="v-150 z-0 c-drag-3 bg-grad px-xl-5 pb-xl-3">
+          <Row className="justify-content-center align-items-center d-flex px-md-5 px-4 pt-5 mt-3 mx-xl-5 mx-lg-4">
             <Col lg={9} sm={12} className="px-xl-5 px-lg-4">
-              <h2 className="text-white text-center text-drop mb-5">Our Partners</h2>
+              <h2 className="text-white text-center text-drop mb-5 d-none d-md-block">Our Partners</h2>
+              <h2 className="text-white text-drop mb-5 d-md-none">Our Partners</h2>
               <div className="d-flex justify-content-between align-items-center">          
                 <Image fluid className="col-3 pe-4" src="/upei-logo.svg" alt="UPEI logo" />    
                 <Image fluid className="col-3" src="/mount-logo.svg" alt="Mount Academy logo" />  
                 <Image fluid className="col-3 " src="/bgc-logo.svg" alt="Boys &amp; Girls Club Logo" />                 
               </div>
               <hr/>
-              <Row className="text-grey mt-4">
-                <Col>
+              <Row className="text-grey text-tight-drop mt-4">
+                <Col md={6} sm={12}>
                 <h5 className="mb-1">Universities</h5>
                 <p className="mb-4">UPEI Panthers</p>
                 <h5 className="mb-1">Private Schools</h5>
@@ -267,17 +269,17 @@ export default function Home() {
                 <h5 className="mb-1">Minor Sports</h5>
                 <p className="mb-4">North River Minor Hockey</p>
                 </Col>
-                <Col>
+                <Col md={6} sm={12}>
                 <h5 className="mb-1">Home &amp; School</h5>
                 <p>Charlottetown Rural Senior High School</p>
                 <p>Colonel Gray Senior High School</p>
                 <p>Birchwood Intermediate School</p>
                 <p>Donagh Regional School</p>
-                <p> Glen Stewart Primary School</p>
+                <p>Glen Stewart Primary School</p>
                 <p>Gulf Shore Consolidated School</p>
-                <p> L. M. Montgomery Elementary School</p>
-                <p> Parkdale Elementary School</p>
-                <p> Queen Charlotte Intermediate School</p>
+                <p>L. M. Montgomery Elementary School</p>
+                <p>Parkdale Elementary School</p>
+                <p>Queen Charlotte Intermediate School</p>
                 <p>Spring Park Elementary School</p>
                 <p>Stonepark Intermediate School</p>
                 <p>Stratford Elementary School</p>
@@ -289,6 +291,82 @@ export default function Home() {
             </Col>
           </Row>
         
+        </Container>
+
+        <Container fluid id="calculate" className="v-135 bg-mix c-drag-4 px-xl-5 pb-xl-3 pb-5">
+        <Row className="justify-content-center align-items-center d-flex px-md-5 px-4 mt-3 mx-xl-5 mx-lg-4 mb-5 pt-md-5">
+            <Col sm={12} className="px-xl-5 px-lg-4">
+              <h2 className="text-white text-center text-drop mb-3 d-none d-md-block">Calculate Potential Revenue</h2>
+              <p className="text-grey text-center mb-4 text-tight-drop d-none d-md-block">Try our revenue calculator to get a sense of what your potential revenue could like with Causable.</p>
+              <h2 className="text-white text-drop mb-3 d-md-none">Calculate Potential Revenue</h2>
+              <p className="text-grey mb-4 text-tight-drop d-md-none">Try our revenue calculator to get a sense of what your potential revenue could like with Causable.</p>
+              <Row className="well">
+                <Col className="brdr-rght pe-lg-5 pe-md-4">
+                  <h4 className="text-white">Enter Raffle Numbers</h4>
+                  <ul className="text-grey">
+                    <li className="small">
+                    Numbers are pre-populated to a common scenario
+                    </li>
+                  </ul>
+                 
+                  <hr />
+                  <Form className=" mb-md-0 mb-5" >
+                    <Form.Group className="mb-3" controlId="formNumberPlayers">
+                      <Form.Label className="text-grey p small">Number of weekly players</Form.Label>
+                      <Form.Control className="input-alt" size="sm" type="email" placeholder="Enter number" />
+                    </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="formTicketPrice">
+                      <Form.Label className="text-grey p small">Ticket play price ($)</Form.Label>
+                      <Form.Control className="input-alt" size="sm" type="email" placeholder="Enter price" />
+                    </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="formPercentPot">
+                      <Form.Label className="text-grey p small">Percentage of the pot your organization takes </Form.Label>
+                      <Form.Control className="input-alt" size="sm" type="email" placeholder="Enter percentage" />
+                    </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="formTicketPrice">
+                      <Form.Label className="text-grey p small">Number of text messages sent weekly per-player</Form.Label>
+                      <Form.Control className="input-alt" size="sm" type="email" placeholder="Enter number" />
+                    </Form.Group>
+
+                    <Form.Group className="mb-4" controlId="formTicketPrice">
+                      <Form.Label className="text-grey p small">Number of weeks you will run your game (yearly)</Form.Label>
+                      <Form.Control className="input-alt" size="sm" type="email" placeholder="Enter number" />
+                    </Form.Group>
+
+                  <div className="d-grid gap-2">
+                  <Button className="btn-blue" type="submit" size="lg">
+                    CALCULATE REVENUE
+                  </Button>
+                  </div>
+                </Form>
+                </Col>
+                <Col className="ps-lg-5 ps-md-4">
+                  <h4 className="text-white mb-4">Potential Revenue</h4>
+                  <hr />
+                  <p className="h2 text-white">$9,237</p>
+                  <p class="h6 text-blue mb-4">weekly</p>
+                  <hr />
+                  <p className="h2 text-white">$480,321</p>
+                  <p class="h6 text-blue mb-4">yearly</p>
+                  
+                  <ul className="text-grey">
+                    <li className="small">
+                    Approximate total Revenue for your organization after winners split, Causable fees, and averaged taxes.
+                    </li>
+                  </ul>
+
+                  <hr />
+                  <p className="text-grey small">
+                  This revenue is generated with very little effort on your part. Once the game is set up and running it continues to tick along automatically, resetting or continuing depending on if there was winner that particular week.
+                  </p>
+                </Col>
+              </Row>
+            </Col>
+              
+          </Row>
         </Container>
 
         </main>

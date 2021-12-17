@@ -17,6 +17,8 @@ import Link from 'next/link'
 export default function Header() {
   return (
 
+    <>
+
   <Container fluid className="fixed header">
       
       <Row>
@@ -33,21 +35,22 @@ export default function Header() {
           
          <div className="headerNav">
          
-          <Link href="#" >
+          <Link href="#why" >
             <a className="text-white">
               Why Causable? 
             </a>
           </Link>
-          <Link href="#" >
+          <Link href="#what" >
             <a className="text-white">
               What You Get
             </a>
           </Link>
-          <Link href="#" >
+          <Link href="#how" >
             <a className="text-white">
             How To Work With Us
             </a>
-          </Link><Link href="#" >
+          </Link>
+          <Link href="#calculate" >
             <a className="text-white">
               Calculate Potential Revenue
             </a>
@@ -72,6 +75,8 @@ export default function Header() {
       </Row>
 
   </Container>
+
+  </>
   
   )
 }
