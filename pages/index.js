@@ -11,14 +11,19 @@ import Image from 'react-bootstrap/Image';
 import { useRouter } from 'next/router';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Placeholder from 'react-bootstrap/Placeholder'
+import Placeholder from 'react-bootstrap/Placeholder';
+import Offcanvas from 'react-bootstrap/Offcanvas'
 
 
 export default function Home() {
-  const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [showModal, setShowModal] = useState(false);
+  const handleCloseModal = () => setShowModal(false);
+  const handleShowModal = () => setShowModal(true);
+
+  const [showOffCanvas, setShowOffCanvas] = useState(false);
+  const handleCloseOffCanvas = () => setShowOffCanvas(false);
+  const handleShowOffCanvas = () => setShowOffCanvas(true);
 
   return (
 
@@ -31,20 +36,30 @@ export default function Home() {
       </Head>
       <Header />
 
-      <Modal centered size="lg" show={show} onHide={handleClose}>
+      <Modal centered size="lg" show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" onClick={handleCloseModal}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={handleCloseModal}>
             Save Changes
           </Button>
         </Modal.Footer>
       </Modal>
+
+      <Offcanvas show={showOffCanvas} onHide={handleCloseOffCanvas} placement='end'>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
 
       <main className="bg-dark-blue">
 
@@ -62,7 +77,7 @@ export default function Home() {
                     </Button>
                   </Link>
                   <Link href="#">
-                    <Button className="btn btn-outline tight-drop video m-1" onClick={handleShow}>
+                    <Button className="btn btn-outline tight-drop video m-1" onClick={handleShowModal}>
                       WATCH DEMO
                     </Button>
                   </Link>
@@ -76,7 +91,7 @@ export default function Home() {
                     </Button>
                   </Link>
                   <Link href="#">
-                    <Button className="btn btn-outline tight-drop video m-1" onClick={handleShow}>
+                    <Button className="btn btn-outline tight-drop video m-1" onClick={handleShowModal}>
                       WATCH DEMO
                     </Button>
                   </Link>
@@ -248,14 +263,14 @@ export default function Home() {
               <p class="lead text-grey text-drop mb-3">Partner with Causable</p>
               <div className="d-none d-sm-block">
                 <Link href="#">
-                  <Button className="btn btn-blue tight-drop arrow">
+                  <Button className="btn btn-blue tight-drop arrow" onClick={handleShowOffCanvas}>
                     GET STARTED
                   </Button>
                 </Link>
               </div>
               <div className="d-grid gap-2 mb-5">
                 <Link href="#">
-                  <Button className="btn btn-blue tight-drop arrow d-block d-sm-none">
+                  <Button className="btn btn-blue tight-drop arrow d-block d-sm-none " onClick={handleShowOffCanvas}>
                     GET STARTED
                   </Button>
                 </Link>

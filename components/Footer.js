@@ -10,13 +10,31 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Link from 'next/link';
 import FormControl from 'react-bootstrap/FormControl';
-import Link from 'next/link'
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
 
 export default function Footer() {
+  
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
 
     <>
+
+<Offcanvas show={show} onHide={handleClose} placement='end'>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
 
     <footer >
 
@@ -33,18 +51,18 @@ export default function Footer() {
           <Col lg={6}>
           <p className="text-grey lead mb-4 ms-1 text-tight-drop">We have created an innovative solution that will help change the way charities engage their donors. The elegance and ease of use will delight your users and drive revenues to your organization. </p>
           <div className="d-none d-lg-block">
-                <Link href="#">
-                  <Button className="btn btn-blue tight-drop arrow">
+                
+                  <Button className="btn btn-blue tight-drop arrow" onClick={handleShow}>
                     CONTACT US
                   </Button>
-                </Link>
+                
               </div>
               <div className="d-grid gap-2">
-                <Link href="#">
-                  <Button className="btn btn-blue tight-drop arrow d-block d-lg-none">
+                
+                  <Button className="btn btn-blue tight-drop arrow d-block d-lg-none" onClick={handleShow}>
                     CONTACT US
                   </Button>
-                </Link>
+                
               </div>
           </Col>
         </Row>
