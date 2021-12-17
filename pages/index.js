@@ -9,9 +9,16 @@ import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import { useRouter } from 'next/router';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
 
 export default function Home() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
 
     <>
@@ -22,6 +29,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+
+      <Modal centered size="lg" show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 
       <main className="bg-dark-blue">
 
@@ -39,7 +61,7 @@ export default function Home() {
                     </Button>
                   </Link>
                   <Link href="#">
-                    <Button className="btn btn-outline tight-drop video m-1">
+                    <Button className="btn btn-outline tight-drop video m-1" onClick={handleShow}>
                       WATCH DEMO
                     </Button>
                   </Link>
@@ -53,7 +75,7 @@ export default function Home() {
                     </Button>
                   </Link>
                   <Link href="#">
-                    <Button className="btn btn-outline tight-drop video m-1">
+                    <Button className="btn btn-outline tight-drop video m-1" onClick={handleShow}>
                       WATCH DEMO
                     </Button>
                   </Link>

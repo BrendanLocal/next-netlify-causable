@@ -12,12 +12,30 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import FormControl from 'react-bootstrap/FormControl';
-import Link from 'next/link'
+import Link from 'next/link';
+import Offcanvas from 'react-bootstrap/Offcanvas'
 
-export default function Header() {
+
+export default function Home() {
+  
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
 
     <>
+
+    <Offcanvas show={show} onHide={handleClose} placement='end'>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
 
   <Container fluid className="fixed header">
       
@@ -56,7 +74,7 @@ export default function Header() {
             </a>
           </Link>
           <Link href="#" >
-            <Button className="btn btn-outline tight-drop arrow">
+            <Button className="btn btn-outline tight-drop arrow" onClick={handleShow}>
               GET STARTED
             </Button>
           </Link>
@@ -66,7 +84,7 @@ export default function Header() {
 
           <Col>
 
-          <Link href="/">
+          <Link href="#">
             <img className="chat-btn" src="/chat-btn.svg" alt="Chat button"/>
             </Link>
             
