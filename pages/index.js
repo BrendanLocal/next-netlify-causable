@@ -69,8 +69,8 @@ export default function Home() {
         </Container>
 
 
-        <Container fluid id="why" className="v-full bg-dgnl c-drag px-xl-5 pb-5 mb-5 ">
-          <Row className="align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 pb-5 mx-xl-5 mx-lg-4 ">
+        <Container fluid className="v-full bg-dgnl c-drag align-items-center d-flex px-xl-5 pb-5 mb-5 ">
+          <Row id="why" className="justify-content-center align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 pb-5 mx-xl-5 mx-lg-4 pt-md-5">
 
             <Col xl={5} lg={5} md={5} sm={12} className="px-xl-5 ps-lg-4 pt-lg-0 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 ">
               <h2 className="text-white text-drop mb-3">Why Causable?</h2>
@@ -100,9 +100,9 @@ export default function Home() {
           </Row>
         </Container>
 
-        <Container fluid id="what" className="v-full z-0 bg-grad c-drag-3 ps-xl-5 pb-5 mb-5">
+        <Container fluid className="v-full z-0 bg-grad c-drag-3 ps-xl-5 pb-5 mb-5">
 
-          <Row id="what-1" className="align-items-center d-flex ps-md-5 ps-4 pe-lg-0 pe-md-0 pb-5 ms-xl-5 ms-lg-4">
+          <Row id="what" className="align-items-center d-flex ps-md-5 pt-5 ps-4 pe-lg-0 pe-md-0 pb-5 pb-lg-0 pb-xl-5  ms-xl-5 ms-lg-4">
 
             <Col xl={5} lg={5} md={8} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 pe-5">
               <h6 className="text-blue text-tight-drop mb-3 mt-5">WHAT YOU GET</h6>
@@ -121,7 +121,7 @@ export default function Home() {
             
           </Row>
 
-          <Row id="what-2" className="align-items-center d-flex ps-md-5 ps-4 pe-lg-0 pe-md-0 pb-5 ms-xl-5 ms-lg-4">
+          <Row id="what-2" className="align-items-center d-flex ps-md-5 ps-4 pe-lg-0 pe-md-0 pb-5 pb-lg-0 pb-xl-5 ms-xl-5 ms-lg-4">
 
             <Col xl={5} lg={5} md={8} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 pe-5">
               <h6 className="text-blue text-tight-drop mb-3 mt-5">WHAT YOU GET</h6>
@@ -160,7 +160,7 @@ export default function Home() {
             
           </Row>
 
-          <Row id="what-3" className="align-items-center d-flex py-5 ps-md-5 ps-4 pe-lg-0 pe-md-0 ms-xl-5 ms-lg-4">
+          <Row id="what-3" className="align-items-center d-flex pt-xl-3 pb-5 ps-md-5 ps-4 pe-lg-0 pe-md-0 ms-xl-5 ms-lg-4">
             <Col xl={5} lg={5} md={8} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-2 pe-lg-4 pe-5">
               <h6 className="text-blue text-tight-drop mb-3 mt-5">WHAT YOU GET</h6>
               <h3 className="text-white text-drop mb-3">Ongoing Support</h3>
@@ -204,8 +204,8 @@ export default function Home() {
           </Row>  
         </Container>
 
-        <Container fluid id="how" className="v-150 bg-dgnl c-drag-2 px-xl-5 pb-xl-0 pb-5 mb-5">
-          <Row className="align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 py-5 pb-xl-0 mb-xl-0 mx-xl-5 mx-lg-4">
+        <Container fluid className="v-150 bg-dgnl c-drag-2 align-items-center d-flex px-xl-5 pb-5 mb-5">
+          <Row id="how" className="align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 py-5 pb-xl-0 mb-xl-0 mx-xl-5 mx-lg-4">
 
             <Col lg={5} md={6} sm={12} className="ps-xl-5 ps-lg-4 pe-lg-0 pe-md-4 py-md-5 mb-md-0 mb-3">
               <h2 className="text-white text-drop mb-3">How To Work With Us</h2>
@@ -215,7 +215,7 @@ export default function Home() {
               <p className="text-grey text-tight-drop">For Causable, taking this route comes with inherent costs &amp; overhead, but it also gives stability, peace of mind and most importantly a clear path to success for your organization and for Causable.</p>
             </Col>
 
-            <Col lg={{ span: 6, offset: 1 }} md={5} sm={12} className="well ms-lg-5 mb-md-0 mb-5">
+            <Col lg={{ span: 6, offset: 1 }} md={5} sm={12} className="well ms-lg-5 ">
               <h4 class="text-white text-drop">It's so easy to get started!</h4>
               <hr />
               <h6 class="text-blue text-tight-drop">STEP 1</h6>
@@ -247,8 +247,8 @@ export default function Home() {
           </Row>
         </Container>
 
-        <Container fluid id="partners" className="v-150 z-0 c-drag-3 bg-grad px-xl-5 pb-xl-3">
-          <Row className="justify-content-center align-items-center d-flex px-md-5 px-4 pt-5 mt-3 mx-xl-5 mx-lg-4">
+        <Container fluid className="v-150 z-0 c-drag-3 bg-grad px-xl-5 pb-xl-3">
+          <Row id="partners" className="justify-content-center align-items-center d-flex px-md-5 px-4 pt-5 mt-3 mx-xl-5 mx-lg-4">
             <Col lg={9} sm={12} className="px-xl-5 px-lg-4">
               <h2 className="text-white text-center text-drop mb-5 d-none d-md-block">Our Partners</h2>
               <h2 className="text-white text-drop mb-5 d-md-none">Our Partners</h2>
@@ -293,9 +293,9 @@ export default function Home() {
         
         </Container>
 
-        <Container fluid id="calculate" className="v-135 bg-mix c-drag-4 px-xl-5 pb-5">
-        <Row className="justify-content-center align-items-center d-flex px-md-5 px-4 mt-3 mx-xl-5 mx-lg-4 mb-5 pt-md-5">
-            <Col sm={12} className="px-xl-5 px-lg-4">
+        <Container fluid className="v-135 bg-mix c-drag-4 px-xl-5 pb-5">
+        <Row id="calculate" className="justify-content-center align-items-center d-flex px-md-5 px-4 mt-3 mx-xl-5 mx-lg-4 mb-5 py-md-5">
+            <Col sm={12} className="px-xl-5 px-lg-4 pt-md-5">
               <h2 className="text-white text-center text-drop mb-3 d-none d-md-block">Calculate Potential Revenue</h2>
               <p className="text-grey text-center mb-4 text-tight-drop d-none d-md-block">Try our revenue calculator to get a sense of what your potential revenue could like with Causable.</p>
               <h2 className="text-white text-drop mb-3 d-md-none">Calculate Potential Revenue</h2>

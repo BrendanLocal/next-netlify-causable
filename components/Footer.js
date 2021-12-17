@@ -21,8 +21,10 @@ export default function Footer() {
     <footer >
 
       <Container fluid className="v-footer justify-content-center align-items-center d-flex p-md-5 p-4">
-        
-        <Row className="justify-content-center align-items-center d-flex p-xl-5 m-xl-5 p-md-4 p-md-4 p-2 pb-0 mb-0">
+
+        <Row className="justify-content-center align-items-center d-flex pt-xl-5 pt-lg-4">
+          <Col lg="11" md="10">
+          <Row className="justify-content-center align-items-center d-flex p-xl-5 m-xl-5 p-md-4 p-md-4 p-2 pb-0 mb-0 mt-5">
           <Col lg={6}>
           <h2 className="h1 text-white d-none d-lg-block text-drop">Raise<br />more with Causable</h2>
           <h2 className="h1 text-white d-lg-none pe-5 text-drop">Raise more with Causable</h2>
@@ -30,7 +32,7 @@ export default function Footer() {
           </Col>
           <Col lg={6}>
           <p className="text-grey lead mb-4 ms-1 text-tight-drop">We have created an innovative solution that will help change the way charities engage their donors. The elegance and ease of use will delight your users and drive revenues to your organization. </p>
-          <div className="d-none d-sm-block">
+          <div className="d-none d-lg-block">
                 <Link href="#">
                   <Button className="btn btn-blue tight-drop arrow">
                     CONTACT US
@@ -39,39 +41,41 @@ export default function Footer() {
               </div>
               <div className="d-grid gap-2">
                 <Link href="#">
-                  <Button className="btn btn-blue tight-drop arrow d-block d-sm-none">
+                  <Button className="btn btn-blue tight-drop arrow d-block d-lg-none">
                     CONTACT US
                   </Button>
                 </Link>
               </div>
           </Col>
         </Row>
+          </Col>
+        </Row>
 
       </Container>
 
-      <Container fluid className="d-none d-md-block">
+      <Container fluid className="d-none d-md-block mt-0 pt-0">
       <Row className="justify-content-between align-items-end d-flex mt-0 pt-0 p-4">
-          <Col >
+          <Col className="mt-0 pt-0">
           <p className="text-white mb-0">©2021 - Causable</p>
           </Col>
-          <Col className="d-flex justify-content-center" >
+          <Col className="d-flex justify-content-center mt-0 pt-0" >
           <Link href="#" >
-            <a className="text-white mx-2">
+            <a className="text-white mx-2 mt-0 pt-0 ">
               Facebook
             </a>
           </Link>
           <Link href="#" >
-            <a className="text-white mx-2">
+            <a className="text-white mx-2 mt-0 pt-0">
               Instagram
             </a>
           </Link>
           <Link href="#" >
-            <a className="text-white mx-2">
+            <a className="text-white mx-2 mt-0 pt-0">
             Twitter
             </a>
           </Link>
           </Col>
-          <Col>
+          <Col className="mt-0 pt-0">
           </Col>
       </Row>
       </Container>
