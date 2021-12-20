@@ -37,27 +37,93 @@ export default function Home() {
       <Header />
 
       <Modal centered size="lg" show={showModal} onHide={handleCloseModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>Connect with us to watch the demo</Modal.Title>
+        <Modal.Header closeButton className="p-md-4">
+          <p className="h6 text-dark-blue">WATCH DEMO</p>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal}>
-            Close
+        <Modal.Body className="p-md-4">
+          <h4 className="mb-4">
+          Connect with us to watch the demo
+          </h4>
+
+          <Form className="mb-0 pb-0 px-md-1" >
+          <Form.Group className="mb-3" controlId="firstLastName">
+            <Form.Label className="p small text-dark-blue">FIRST AND LAST NAME *</Form.Label>
+            <Form.Control type="email" placeholder="" />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="orgName">
+            <Form.Label className="p small text-dark-blue">ORGANIZATION NAME *</Form.Label>
+            <Form.Control type="email" placeholder="" />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="email">
+            <Form.Label className="p small text-dark-blue">EMAIL ADDRESS *</Form.Label>
+            <Form.Control type="email" placeholder="" />
+          </Form.Group>
+
+          <Form.Group className="mb-4" controlId="location">
+            <Form.Label className="p small text-dark-blue">LOCATION *</Form.Label>
+            <Form.Control type="email" placeholder="" />
+          </Form.Group>
+          <Form.Group className="mb-4" controlId="formBasicCheckbox">
+            <Form.Check type="checkbox" label="Check me out" />
+          </Form.Group>
+          </Form>
+          <Button className="btn btn-blue video w-full" onClick={handleCloseModal}>
+            SEND ME THE DEMO 
           </Button>
-          <Button variant="primary" onClick={handleCloseModal}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
+
+        </Modal.Body>
       </Modal>
 
       <Offcanvas show={showOffCanvas} onHide={handleCloseOffCanvas} placement='end'>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>
+          <p className="h6 text-dark-blue">GET STARTED - CONTACT US</p>
+          </Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+        <Offcanvas.Body className="d-flex flex-column bd-highlight mb-3">
+        <h4 className="alt mb-auto bd-highlight">
+        Interested in increasing your charitable fundraising revenue with Causable?
+          </h4>
+          
+          <Form className="mb-3 bd-highlight">
+          <Form.Group className="mb-3" controlId="firstLastName">
+            <Form.Label className="p small text-dark-blue">FIRST AND LAST NAME *</Form.Label>
+            <Form.Control type="email" placeholder="" />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="orgName">
+            <Form.Label className="p small text-dark-blue">ORGANIZATION NAME *</Form.Label>
+            <Form.Control type="email" placeholder="" />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="email">
+            <Form.Label className="p small text-dark-blue">EMAIL ADDRESS *</Form.Label>
+            <Form.Control type="email" placeholder="" />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="lodaction">
+            <Form.Label className="p small text-dark-blue">LOCATION *</Form.Label>
+            <Form.Control type="email" placeholder="" />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formGridState">
+            <Form.Label className="p small text-dark-blue">EXPECTED NUMBER OF PLAYERS *</Form.Label>
+            <Form.Select defaultValue="Please select...">
+              <option>Please select...</option>
+              <option>Less than 1000</option>
+              <option>1000-5000</option>
+              <option>5000-10,000</option>
+              <option>10,000-20,000</option>
+              <option>20,000 +</option>
+            </Form.Select>
+          </Form.Group>
+          </Form>
+          
+          <Button className="btn btn-blue w-full bd-highlight" onClick={handleCloseModal}>
+            SUBMIT
+          </Button>
         </Offcanvas.Body>
       </Offcanvas>
 

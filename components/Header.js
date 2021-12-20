@@ -17,7 +17,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas'
 
 
 export default function Home() {
-  
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -27,13 +27,54 @@ export default function Home() {
 
     <>
 
-    <Offcanvas show={show} onHide={handleClose} placement='end'>
+<Offcanvas show={show} onHide={handleClose} placement='end'>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>
+          <p className="h6 text-dark-blue">GET STARTED - CONTACT US</p>
+          </Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+        <Offcanvas.Body className="d-flex flex-column bd-highlight mb-3">
+        <h4 className="alt mb-auto bd-highlight">
+        Interested in increasing your charitable fundraising revenue with Causable?
+          </h4>
+          
+          <Form className="mb-3 bd-highlight">
+          <Form.Group className="mb-3" controlId="firstLastName">
+            <Form.Label className="p small text-dark-blue">FIRST AND LAST NAME</Form.Label>
+            <Form.Control type="email" placeholder="" />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="orgName">
+            <Form.Label className="p small text-dark-blue">ORGANIZATION NAME</Form.Label>
+            <Form.Control type="email" placeholder="" />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="email">
+            <Form.Label className="p small text-dark-blue">EMAIL ADDRESS</Form.Label>
+            <Form.Control type="email" placeholder="" />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="lodaction">
+            <Form.Label className="p small text-dark-blue">LOCATION</Form.Label>
+            <Form.Control type="email" placeholder="" />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formGridState">
+            <Form.Label className="p small text-dark-blue">EXPECTED NUMBER OF PLAYERS</Form.Label>
+            <Form.Select defaultValue="Please select...">
+              <option>Please select...</option>
+              <option>Less than 1000</option>
+              <option>1000-5000</option>
+              <option>5000-10,000</option>
+              <option>10,000-20,000</option>
+              <option>20,000 +</option>
+            </Form.Select>
+          </Form.Group>
+          </Form>
+          
+          <Button className="btn btn-blue w-full bd-highlight" onClick={handleClose}>
+            SUBMIT
+          </Button>
         </Offcanvas.Body>
       </Offcanvas>
 
