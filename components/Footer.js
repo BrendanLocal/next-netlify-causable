@@ -52,7 +52,7 @@ export default function Footer() {
           <p className="text-grey lead mb-4 ms-1 text-tight-drop">We have created an innovative solution that will help change the way charities engage their donors. The elegance and ease of use will delight your users and drive revenues to your organization. </p>
           <div className="d-none d-lg-block">
                 
-                  <Button className="btn btn-blue tight-drop arrow" onClick={handleShow}>
+                  <Button className="btn btn-blue tight-drop arrow ms-1" onClick={handleShow}>
                     CONTACT US
                   </Button>
                 

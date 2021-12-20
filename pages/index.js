@@ -38,7 +38,7 @@ export default function Home() {
 
       <Modal centered size="lg" show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Connect with us to watch the demo</Modal.Title>
         </Modal.Header>
         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
         <Modal.Footer>
@@ -113,7 +113,7 @@ export default function Home() {
         <Container fluid className="v-full bg-dgnl c-drag align-items-center d-flex px-xl-5 pb-5 mb-5 ">
           <Row id="why" className="justify-content-center align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 pb-5 mx-xl-5 mx-lg-4 pt-md-5">
 
-            <Col xl={5} lg={5} md={5} sm={12} className="px-xl-5 ps-lg-4 pt-lg-0 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 ">
+            <Col md={4} sm={12} className="px-xl-5 ps-lg-4 pt-lg-0 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 ">
               <h2 className="text-white text-drop mb-3">Why Causable?</h2>
               <p className="text-grey mb-3 bold ms-1 text-tight-drop">Causable’s electronic raffle technology and marketing platform provides your charitable organizations with unparalleled fundraising capacity in a secure and interactive manner.</p>
               <object className="d-block d-sm-none" type="image/svg+xml" data="/Causable-Animation-ENG.svg" alt="Causable platform animation" />
@@ -134,8 +134,8 @@ export default function Home() {
               </div>
             </Col>
 
-            <Col xl={7} lg={7} md={7} sm={12} className="mb-0 justify-content-center p-0 pb-xl-5 pb-md-5">
-              <object className="d-none d-sm-block" type="image/svg+xml" data="/Causable-Animation-ENG.svg" alt="Causable platform animation" />
+            <Col md={8} sm={12} className="mb-0 justify-content-center p-0 pb-xl-5 pb-md-5 me-0">
+              <object className="d-none d-sm-block me-0" type="image/svg+xml" data="/Causable-Animation-ENG.svg" alt="Causable platform animation" />
             </Col>
 
           </Row>
@@ -145,7 +145,7 @@ export default function Home() {
 
           <Row id="what" className="align-items-center d-flex ps-md-5 pt-5 ps-4 pe-lg-0 pe-md-0 pb-5 pb-lg-0 pb-xl-5  ms-xl-5 ms-lg-4">
 
-            <Col xl={5} lg={5} md={8} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 pe-5">
+            <Col xl={4} lg={5} md={7} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 pe-5">
               <h6 className="text-blue text-tight-drop mb-3 mt-5">WHAT YOU GET</h6>
               <h3 className="text-white text-drop mb-3">The Game</h3>
               <p className="text-grey text-tight-drop mb-3 bold">Causables electronic raffle technology and marketing platform provides your charitable organizations with unparalleled fundraising capacity in a secure and interactive manner.</p>
@@ -156,7 +156,7 @@ export default function Home() {
             <Image fluid className="dash-img p-0" src="/goldrush-dash.svg" alt="50/50 results" />
             </Col>
 
-            <Col lg={7} className="p-0 d-none d-lg-block">
+            <Col xl={8} lg={7} className="p-0 d-none d-lg-block">
             <Image fluid className="dash-img p-0" src="/goldrush-dash.svg" alt="50/50 results" />
             </Col>
             
@@ -164,7 +164,7 @@ export default function Home() {
 
           <Row id="what-2" className="align-items-center d-flex ps-md-5 ps-4 pe-lg-0 pe-md-0 pb-5 pb-lg-0 pb-xl-5 ms-xl-5 ms-lg-4">
 
-            <Col xl={5} lg={5} md={8} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 pe-5">
+            <Col xl={4} lg={5} md={7} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 pe-5">
               <h6 className="text-blue text-tight-drop mb-3 mt-5">WHAT YOU GET</h6>
               <h3 className="text-white text-drop mb-3">Branded Mobile App for your Charity</h3>
               <p className="text-grey text-tight-drop mb-3 bold">Logo, colors, important communication, this is <span className="italic">your</span> charity app.</p>
@@ -185,7 +185,7 @@ export default function Home() {
               </Row>
             </Col>
              
-            <Col lg={7} className="p-0 d-none d-lg-block">
+            <Col xl={8} lg={7} className="p-0 d-none d-lg-block">
             <Row className="p-0 m-0">
                 <Col className="p-0 m-0">
                 <Image fluid className="app-img" src="/theapp1.svg" alt="Branded mobile app dashboard" />
@@ -202,7 +202,7 @@ export default function Home() {
           </Row>
 
           <Row id="what-3" className="align-items-center d-flex pt-xl-3 pb-5 ps-md-5 ps-4 pe-lg-0 pe-md-0 ms-xl-5 ms-lg-4">
-            <Col xl={5} lg={5} md={8} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-2 pe-lg-4 pe-5">
+            <Col xl={4} lg={5} md={7} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-2 pe-lg-4 pe-5">
               <h6 className="text-blue text-tight-drop mb-3 mt-5">WHAT YOU GET</h6>
               <h3 className="text-white text-drop mb-3">Ongoing Support</h3>
               <ul className="text-grey text-tight-drop">
@@ -239,7 +239,7 @@ export default function Home() {
             <Image fluid className="support-img p-0" src="/ongoing-support.svg" alt="Ongoing support" />
             </Col>
 
-            <Col lg={7} className="p-0 d-none d-lg-block">
+            <Col xl={8} lg={7} className="p-0 d-none d-lg-block">
             <Image fluid className="support-img p-0" src="/ongoing-support.svg" alt="Ongoing support" />
             </Col>            
           </Row>  
