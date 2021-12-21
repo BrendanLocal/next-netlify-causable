@@ -113,7 +113,7 @@ export default function Footer() {
       </Container>
 
       <Container fluid className="d-none d-md-block mt-0 pt-0">
-      <Row className="justify-content-between align-items-end d-flex mt-0 pt-0 p-4">
+      <Row className="justify-content-between align-items-end d-flex mt-0 pt-0 px-lg-3 p-4">
           <Col className="mt-0 pt-0">
           <p className="text-white mb-0">©2021 - Causable</p>
           </Col>
