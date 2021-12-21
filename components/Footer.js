@@ -77,7 +77,7 @@ export default function Footer() {
         </Offcanvas.Body>
       </Offcanvas>
 
-    <footer >
+    <footer className="bg-grad">
 
       <Container fluid className="v-footer justify-content-center align-items-center d-flex p-md-5 p-4">
 

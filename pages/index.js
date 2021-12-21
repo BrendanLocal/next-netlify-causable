@@ -38,31 +38,31 @@ export default function Home() {
 
       <Modal centered size="lg" show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton className="p-md-4">
-          <p className="h6 text-dark-blue">WATCH DEMO</p>
+          <p className="h6 text-dark-blue pb-0">WATCH DEMO</p>
         </Modal.Header>
         <Modal.Body className="p-md-4">
           <h4 className="mb-4">
-          Connect with us to watch the demo
+          Connect with us to watch our demo
           </h4>
 
           <Form className="mb-0 pb-0 px-md-1" >
           <Form.Group className="mb-3" controlId="firstLastName">
-            <Form.Label className="p small text-dark-blue">FIRST AND LAST NAME *</Form.Label>
+            <Form.Label className="p small text-dark-blue">FIRST AND LAST NAME</Form.Label>
             <Form.Control type="email" placeholder="" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="orgName">
-            <Form.Label className="p small text-dark-blue">ORGANIZATION NAME *</Form.Label>
+            <Form.Label className="p small text-dark-blue">ORGANIZATION NAME</Form.Label>
             <Form.Control type="email" placeholder="" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="email">
-            <Form.Label className="p small text-dark-blue">EMAIL ADDRESS *</Form.Label>
+            <Form.Label className="p small text-dark-blue">EMAIL ADDRESS</Form.Label>
             <Form.Control type="email" placeholder="" />
           </Form.Group>
 
           <Form.Group className="mb-4" controlId="location">
-            <Form.Label className="p small text-dark-blue">LOCATION *</Form.Label>
+            <Form.Label className="p small text-dark-blue">LOCATION</Form.Label>
             <Form.Control type="email" placeholder="" />
           </Form.Group>
           <Form.Group className="mb-4" controlId="formBasicCheckbox">
@@ -89,27 +89,27 @@ export default function Home() {
           
           <Form className="mb-3 bd-highlight">
           <Form.Group className="mb-3" controlId="firstLastName">
-            <Form.Label className="p small text-dark-blue">FIRST AND LAST NAME *</Form.Label>
+            <Form.Label className="p small text-dark-blue">FIRST AND LAST NAME</Form.Label>
             <Form.Control type="email" placeholder="" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="orgName">
-            <Form.Label className="p small text-dark-blue">ORGANIZATION NAME *</Form.Label>
+            <Form.Label className="p small text-dark-blue">ORGANIZATION NAME</Form.Label>
             <Form.Control type="email" placeholder="" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="email">
-            <Form.Label className="p small text-dark-blue">EMAIL ADDRESS *</Form.Label>
+            <Form.Label className="p small text-dark-blue">EMAIL ADDRESS</Form.Label>
             <Form.Control type="email" placeholder="" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="lodaction">
-            <Form.Label className="p small text-dark-blue">LOCATION *</Form.Label>
+            <Form.Label className="p small text-dark-blue">LOCATION</Form.Label>
             <Form.Control type="email" placeholder="" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formGridState">
-            <Form.Label className="p small text-dark-blue">EXPECTED NUMBER OF PLAYERS *</Form.Label>
+            <Form.Label className="p small text-dark-blue">EXPECTED NUMBER OF PLAYERS</Form.Label>
             <Form.Select defaultValue="Please select...">
               <option>Please select...</option>
               <option>Less than 1000</option>
@@ -133,7 +133,7 @@ export default function Home() {
           <Row className="justify-content-center align-items-center d-flex mx-xl-5 mx-lg-3 py-lg-0 py-md-5 py-5 px-xl-5">
 
             <Col xl={6} lg={7} md={7} sm={12} className="px-xl-5 px-lg-5 pb-lg-5 mb-lg-5 pb-md-2 mb-md-2 px-3 mt-md-0 mt-2">
-              <h1 className="text-white text-drop mb-3 mt-md-0 mt-5">Raise <br /> more with Causable</h1>
+              <h1 className="text-white text-drop mb-3 mt-5">Raise <br /> more with Causable</h1>
               <p className="lead text-grey text-tight-drop pe-4 ms-1 mb-4">Increase your charitable fundraising revenue with our all-in-one platform.</p>
               <Row className="pb-md-5 pb-3 mb-xl-5 d-none d-sm-block">
                 <Col>
