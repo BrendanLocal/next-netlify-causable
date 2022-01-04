@@ -3,6 +3,7 @@ import Header from '@components/Header';
 import Footer from '@components/Footer';
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import Fade from 'react-reveal/Fade';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Form from 'react-bootstrap/Form';
@@ -38,7 +39,7 @@ export default function Home() {
 
       <Modal centered size="lg" show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton className="p-md-4">
-          <p className="h6 text-dark-blue pb-0">WATCH DEMO</p>
+          <p className="h6 text-dark-blue pb-0">WATCH DEMO - CONNECT WITH US</p>
         </Modal.Header>
         <Modal.Body className="p-md-4">
           <h4 className="mb-4">
@@ -69,7 +70,7 @@ export default function Home() {
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
           </Form>
-          <Button className="btn btn-blue video w-full" onClick={handleCloseModal}>
+          <Button className="btn btn-blue w-full" onClick={handleCloseModal}>
             SEND ME THE DEMO 
           </Button>
 
@@ -130,6 +131,7 @@ export default function Home() {
       <main className="bg-dark-blue">
 
         <Container id="hero" fluid className="v-full z-999 py-5 px-md-5 px-4">
+          
           <Row className="justify-content-center align-items-center d-flex mx-xl-5 mx-lg-3 py-lg-0 py-md-5 py-5 px-xl-5">
 
             <Col xl={6} lg={7} md={7} sm={12} className="px-xl-5 px-lg-5 pb-lg-5 mb-lg-5 pb-md-2 mb-md-2 px-3 mt-md-0 mt-2">
@@ -173,12 +175,14 @@ export default function Home() {
             </Col>
 
           </Row>
+          
         </Container>
 
 
         <Container fluid className="v-full bg-dgnl c-drag align-items-center d-flex px-xl-5 pb-5 mb-5 ">
+        <Fade bottom>
           <Row id="why" className="justify-content-center align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 pb-5 mx-xl-5 mx-lg-4 pt-md-5">
-
+          
             <Col md={4} sm={12} className="px-xl-5 ps-lg-4 pt-lg-0 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 ">
               <h2 className="text-white text-drop mb-3">Why Causable?</h2>
               <p className="text-grey mb-3 bold ms-1 text-tight-drop">Causable’s electronic raffle technology and marketing platform provides your charitable organizations with unparalleled fundraising capacity in a secure and interactive manner.</p>
@@ -203,12 +207,13 @@ export default function Home() {
             <Col md={8} sm={12} className="mb-0 justify-content-center p-0 pb-xl-5 pb-md-5 me-0">
               <object className="d-none d-sm-block me-0" type="image/svg+xml" data="/Causable-Animation-ENG.svg" alt="Causable platform animation" />
             </Col>
-
+            
           </Row>
+          </Fade>
         </Container>
 
         <Container fluid className="v-full z-0 bg-grad c-drag-3 ps-xl-5 pb-5 mb-5">
-
+        <Fade bottom>
           <Row id="what" className="align-items-center d-flex ps-md-5 pt-5 ps-4 pe-lg-0 pe-md-0 pb-5 pb-lg-0 pb-xl-5  ms-xl-5 ms-lg-4">
 
             <Col xl={4} lg={5} md={7} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 pe-5">
@@ -227,7 +232,9 @@ export default function Home() {
             </Col>
             
           </Row>
+          </Fade>
 
+          <Fade bottom>
           <Row id="what-2" className="align-items-center d-flex ps-md-5 ps-4 pe-lg-0 pe-md-0 pb-5 pb-lg-0 pb-xl-5 ms-xl-5 ms-lg-4">
 
             <Col xl={4} lg={5} md={7} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 pe-5">
@@ -266,7 +273,9 @@ export default function Home() {
             </Col>
             
           </Row>
+          </Fade>
 
+          <Fade bottom>
           <Row id="what-3" className="align-items-center d-flex pt-xl-3 pb-5 ps-md-5 ps-4 pe-lg-0 pe-md-0 ms-xl-5 ms-lg-4">
             <Col xl={4} lg={5} md={7} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-2 pe-lg-4 pe-5">
               <h6 className="text-blue text-tight-drop mb-3 mt-5">WHAT YOU GET</h6>
@@ -308,10 +317,12 @@ export default function Home() {
             <Col xl={8} lg={7} className="p-0 d-none d-lg-block">
             <Image fluid className="support-img p-0" src="/ongoing-support.svg" alt="Ongoing support" />
             </Col>            
-          </Row>  
+          </Row>
+          </Fade>  
         </Container>
 
         <Container fluid className="v-150 bg-dgnl c-drag-2 align-items-center d-flex px-xl-5 pb-5 mb-5">
+          <Fade bottom>
           <Row id="how" className="align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 py-5 pb-xl-0 mb-xl-0 mx-xl-5 mx-lg-4">
 
             <Col lg={5} md={6} sm={12} className="ps-xl-5 ps-lg-4 pe-lg-0 pe-md-4 py-md-5 mb-md-0 mb-3">
@@ -352,9 +363,11 @@ export default function Home() {
             </Col>
 
           </Row>
+          </Fade>
         </Container>
 
         <Container fluid className="v-150 z-0 c-drag-3 bg-grad px-xl-5 pb-xl-3">
+        <Fade bottom>
           <Row id="partners" className="justify-content-center align-items-center d-flex px-md-5 px-4 pt-5 mt-3 mx-xl-5 mx-lg-4">
             <Col lg={9} sm={12} className="px-xl-5 px-lg-4">
               <h2 className="text-white text-center text-drop mb-5 d-none d-md-block">Our Partners</h2>
@@ -397,10 +410,12 @@ export default function Home() {
 
             </Col>
           </Row>
+          </Fade>
         
         </Container>
 
         <Container fluid className="v-135 bg-mix c-drag-4 px-xl-5 pb-5">
+        <Fade bottom>
         <Row id="calculate" className="justify-content-center align-items-center d-flex px-md-5 px-4 mt-3 mx-xl-5 mx-lg-4 mb-5 py-md-5">
             <Col sm={12} className="px-xl-5 px-lg-4 pt-md-5">
               <h2 className="text-white text-center text-drop mb-3 d-none d-md-block">Calculate Potential Revenue</h2>
@@ -474,6 +489,7 @@ export default function Home() {
             </Col>
               
           </Row>
+          </Fade>
         </Container>
 
         </main>
