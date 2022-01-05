@@ -26,6 +26,8 @@ export default function Home() {
   const handleCloseOffCanvas = () => setShowOffCanvas(false);
   const handleShowOffCanvas = () => setShowOffCanvas(true);
 
+
+
   return (
 
     <>
@@ -69,10 +71,11 @@ export default function Home() {
           <Form.Group className="mb-4" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
-          </Form>
-          <Button className="btn btn-blue w-full" onClick={handleCloseModal}>
+          <Button className="btn btn-blue w-full" type="submit">
             SEND ME THE DEMO 
           </Button>
+          </Form>
+         
 
         </Modal.Body>
       </Modal>
@@ -88,7 +91,7 @@ export default function Home() {
         Interested in increasing your charitable fundraising revenue with Causable?
           </h4>
           
-          <Form className="mb-3 bd-highlight">
+          <Form className="bd-highlight">
           <Form.Group className="mb-3" controlId="firstLastName">
             <Form.Label className="p small text-dark-blue">FIRST AND LAST NAME</Form.Label>
             <Form.Control type="email" placeholder="" />
@@ -120,11 +123,11 @@ export default function Home() {
               <option>20,000 +</option>
             </Form.Select>
           </Form.Group>
-          </Form>
-          
-          <Button className="btn btn-blue w-full bd-highlight" onClick={handleCloseModal}>
+          <Button className="btn btn-blue w-full bd-highlight" type="submit">
             SUBMIT
           </Button>
+          </Form>
+        
         </Offcanvas.Body>
       </Offcanvas>
 

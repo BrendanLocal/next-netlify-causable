@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect, MouseEvent, Component} from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import { render } from 'react-dom';
 import Container from 'react-bootstrap/Container';
 import { GetStaticProps } from 'next'
@@ -23,43 +24,36 @@ export default function Home() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  return (
 
-    <>
-
-<Offcanvas show={show} onHide={handleClose} placement='end'>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>
-          <p className="h6 text-dark-blue">GET STARTED - CONTACT US</p>
-          </Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body className="d-flex flex-column bd-highlight mb-3">
-        <h4 className="alt mb-auto bd-highlight">
-        Interested in increasing your charitable fundraising revenue with Causable?
-          </h4>
-          
-          <Form className="mb-3 bd-highlight">
+  function ContactForm() {
+    const [state, handleSubmit] = useForm('{your-form-id}');
+    if (state.succeeded) {
+      return <div>Thank you for signing up!</div>;
+    }
+    return (
+      <form onSubmit={handleSubmit} className="bd-highlight">
+        
           <Form.Group className="mb-3" controlId="firstLastName">
             <Form.Label className="p small text-dark-blue">FIRST AND LAST NAME</Form.Label>
-            <Form.Control type="email" placeholder="" />
+            <Form.Control type="name" placeholder="" required/>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="orgName">
             <Form.Label className="p small text-dark-blue">ORGANIZATION NAME</Form.Label>
-            <Form.Control type="email" placeholder="" />
+            <Form.Control type="name" placeholder="" required/>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="email">
             <Form.Label className="p small text-dark-blue">EMAIL ADDRESS</Form.Label>
-            <Form.Control type="email" placeholder="" />
+            <Form.Control type="email" placeholder="" required/>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="lodaction">
             <Form.Label className="p small text-dark-blue">LOCATION</Form.Label>
-            <Form.Control type="email" placeholder="" />
+            <Form.Control type="name" placeholder="" required/>
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formGridState">
+          <Form.Group className="mb-4" controlId="formGridState">
             <Form.Label className="p small text-dark-blue">EXPECTED NUMBER OF PLAYERS</Form.Label>
             <Form.Select defaultValue="Please select...">
               <option>Please select...</option>
@@ -70,11 +64,33 @@ export default function Home() {
               <option>20,000 +</option>
             </Form.Select>
           </Form.Group>
-          </Form>
-          
-          <Button className="btn btn-blue w-full bd-highlight" onClick={handleClose}>
+          <Button
+          className="btn btn-blue w-full bd-highlight"
+          type="submit" disabled={state.submitting}
+          >
             SUBMIT
           </Button>
+          </form>
+    )
+  }
+
+  return (
+
+    <>
+
+    <Offcanvas show={show} onHide={handleClose} placement='end'>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>
+          <p className="h6 text-dark-blue">GET STARTED - CONTACT US</p>
+          </Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body className="d-flex flex-column bd-highlight mb-3">
+        <h4 className="alt mb-auto bd-highlight">
+        Interested in increasing your charitable fundraising revenue with Causable?
+          </h4>
+          
+          <ContactForm />
+          
         </Offcanvas.Body>
       </Offcanvas>
 
