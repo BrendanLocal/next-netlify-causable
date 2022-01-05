@@ -185,9 +185,9 @@ export default function Home() {
           
             <Col md={4} sm={12} className="px-xl-5 ps-lg-4 pt-lg-0 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 ">
               <h2 className="text-white text-drop mb-3">Why Causable?</h2>
-              <p className="text-grey mb-3 bold ms-1 text-tight-drop">Causable’s electronic raffle technology and marketing platform provides your charitable organizations with unparalleled fundraising capacity in a secure and interactive manner.</p>
+              <p className="text-grey mb-3 bold ms-1 text-tight-drop">Causable's electronic raffle technology and marketing platform provides your charitable organizations with unparalleled fundraising capacity in a secure and interactive manner.</p>
               <object className="d-block d-sm-none" type="image/svg+xml" data="/Causable-Animation-ENG.svg" alt="Causable platform animation" />
-              <p className="text-grey mb-4 ms-1 text-tight-drop">Our mobile playing app allows anyone in your area to play your electronic raffle via their mobile device or computer --  expanding your raffle’s reach and fundraising potential.</p>
+              <p className="text-grey mb-4 ms-1 text-tight-drop">Our mobile playing app allows anyone in your area to play your electronic raffle via their mobile device or computer --  expanding your raffle's reach and fundraising potential.</p>
               <div className="d-none d-sm-block">
                 <Link href="#what">
                   <Button className="btn btn-outline tight-drop d-arrow mb-md-3 mb-0">
@@ -354,8 +354,7 @@ export default function Home() {
               </div>
               <hr />
               <h6 class="text-blue text-tight-drop">STEP 2</h6>
-              <p class="lead text-grey text-drop mb-2">Get your lottery license</p>
-              <p class="text-grey text-tight-drop mb-5"><span className="bold">Don’t worry!</span> We will help you with that.</p>
+              <p class="lead text-grey text-drop mb-5">Get your lottery license</p>
               <hr />
               <h6 class="text-blue text-tight-drop">STEP 3</h6>
               <p class="lead text-drop text-grey">Start promoting</p>
@@ -446,11 +445,6 @@ export default function Home() {
                     <Form.Group className="mb-3" controlId="formPercentPot">
                       <Form.Label className="text-grey p small">Percentage of the pot your organization takes </Form.Label>
                       <Form.Control className="input-alt" size="sm" type="email" placeholder="Enter percentage" />
-                    </Form.Group>
-
-                    <Form.Group className="mb-3" controlId="formTicketPrice">
-                      <Form.Label className="text-grey p small">Number of text messages sent weekly per-player</Form.Label>
-                      <Form.Control className="input-alt" size="sm" type="email" placeholder="Enter number" />
                     </Form.Group>
 
                     <Form.Group className="mb-4" controlId="formTicketPrice">
