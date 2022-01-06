@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect, MouseEvent, Component} from 'react';
-import { useForm, ValidationError } from '@formspree/react';
 import { render } from 'react-dom';
 import Container from 'react-bootstrap/Container';
 import { GetStaticProps } from 'next'
@@ -26,31 +25,32 @@ export default function Home() {
 
 
   function ContactForm() {
-    const [state, handleSubmit] = useForm('{your-form-id}');
+    const [state, handleSubmit] = useState('{your-form-id}');
     if (state.succeeded) {
-      return <div>Thank you for signing up!</div>;
+      return (
+      <div>Thank you for signing up!</div>
+        );
     }
     return (
-      <form onSubmit={handleSubmit} className="bd-highlight">
-        
+      <Form className="bd-highlight">
           <Form.Group className="mb-3" controlId="firstLastName">
             <Form.Label className="p small text-dark-blue">FIRST AND LAST NAME</Form.Label>
-            <Form.Control type="name" placeholder="" required/>
+            <Form.Control type="email" placeholder="" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="orgName">
             <Form.Label className="p small text-dark-blue">ORGANIZATION NAME</Form.Label>
-            <Form.Control type="name" placeholder="" required/>
+            <Form.Control type="email" placeholder="" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="email">
             <Form.Label className="p small text-dark-blue">EMAIL ADDRESS</Form.Label>
-            <Form.Control type="email" placeholder="" required/>
+            <Form.Control type="email" placeholder="" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="lodaction">
             <Form.Label className="p small text-dark-blue">LOCATION</Form.Label>
-            <Form.Control type="name" placeholder="" required/>
+            <Form.Control type="email" placeholder="" />
           </Form.Group>
 
           <Form.Group className="mb-4" controlId="formGridState">
@@ -64,13 +64,11 @@ export default function Home() {
               <option>20,000 +</option>
             </Form.Select>
           </Form.Group>
-          <Button
-          className="btn btn-blue w-full bd-highlight"
-          type="submit" disabled={state.submitting}
-          >
+          <Button className="btn btn-blue w-full bd-highlight mt-2" type="submit">
             SUBMIT
           </Button>
-          </form>
+          </Form>
+        
     )
   }
 
@@ -87,29 +85,20 @@ export default function Home() {
         <Offcanvas.Body className="d-flex flex-column bd-highlight mb-3">
         <h4 className="alt mb-auto bd-highlight">
         Interested in increasing your charitable fundraising revenue with Causable?
-          </h4>
-          
-          <ContactForm />
-          
+          </h4>      
+          <ContactForm />    
         </Offcanvas.Body>
       </Offcanvas>
 
-  <Container fluid className="fixed header">
-      
+  <Container fluid className="fixed header">   
       <Row>
-
           <Col>
-
             <Link href="/">
             <img className="logo" src="/CAUSABLElogo.svg" alt="Causablelogo"/>
             </Link>
-
           </Col>
-
-        <Col>
-          
+        <Col>          
          <div className="headerNav">
-         
           <Link href="#why" >
             <a className="text-white">
               Why Causable? 
@@ -136,19 +125,13 @@ export default function Home() {
             </Button>
           </Link>
           </div>
-
           </Col>
-
           <Col>
-
           <Link href="#">
             <img className="chat-btn" src="/chat-btn.svg" alt="Chat button"/>
-            </Link>
-            
+            </Link>        
           </Col>
-
       </Row>
-
   </Container>
 
   </>
