@@ -13,7 +13,8 @@ import { useRouter } from 'next/router';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Placeholder from 'react-bootstrap/Placeholder';
-import Offcanvas from 'react-bootstrap/Offcanvas'
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import Calc from '@components/Calculator';
 
 
 export default function Home() {
@@ -413,78 +414,7 @@ export default function Home() {
         
         </Container>
 
-        <Container fluid className="v-135 bg-mix c-drag-4 px-xl-5 pb-5">
-        
-        <Row id="calculate" className="justify-content-center align-items-center d-flex px-md-5 px-4 mt-3 mx-xl-5 mx-lg-4 mb-5 py-md-5">
-            <Col sm={12} className="px-xl-5 px-lg-4 pt-md-5">
-              <h2 className="text-white text-center text-drop mb-3 d-none d-md-block">Calculate Potential Revenue</h2>
-              <p className="text-grey text-center mb-4 text-tight-drop d-none d-md-block">Try our revenue calculator to get a sense of what your potential revenue could like with Causable.</p>
-              <h2 className="text-white text-drop mb-3 d-md-none">Calculate Potential Revenue</h2>
-              <p className="text-grey mb-4 text-tight-drop d-md-none">Try our revenue calculator to get a sense of what your potential revenue could like with Causable.</p>
-              <Row className="well">
-                <Col className="brdr-rght pe-lg-5 pe-md-4">
-                  <h4 className="text-white">Enter Raffle Numbers</h4>
-                  <ul className="text-grey">
-                    <li className="small">
-                    Numbers are pre-populated to a common scenario
-                    </li>
-                  </ul>
-                 
-                  <hr />
-                  <Form className=" mb-md-0 mb-5" >
-                    <Form.Group className="mb-3" controlId="formNumberPlayers">
-                      <Form.Label className="text-grey p small">Number of weekly players</Form.Label>
-                      <Form.Control className="input-alt" size="sm" type="email" placeholder="Enter number" />
-                    </Form.Group>
-
-                    <Form.Group className="mb-3" controlId="formTicketPrice">
-                      <Form.Label className="text-grey p small">Ticket play price ($)</Form.Label>
-                      <Form.Control className="input-alt" size="sm" type="email" placeholder="Enter price" />
-                    </Form.Group>
-
-                    <Form.Group className="mb-3" controlId="formPercentPot">
-                      <Form.Label className="text-grey p small">Percentage of the pot your organization takes </Form.Label>
-                      <Form.Control className="input-alt" size="sm" type="email" placeholder="Enter percentage" />
-                    </Form.Group>
-
-                    <Form.Group className="mb-4" controlId="formTicketPrice">
-                      <Form.Label className="text-grey p small">Number of weeks you will run your game (yearly)</Form.Label>
-                      <Form.Control className="input-alt" size="sm" type="email" placeholder="Enter number" />
-                    </Form.Group>
-
-                  <div className="d-grid gap-2">
-                  <Button className="btn-blue" type="submit" size="lg">
-                    CALCULATE REVENUE
-                  </Button>
-                  </div>
-                </Form>
-                </Col>
-                <Col className="ps-lg-5 ps-md-4">
-                  <h4 className="text-white mb-4">Potential Revenue</h4>
-                  <hr />
-                  <p className="h2 text-white">$9,237</p>
-                  <p class="h6 text-blue mb-4">weekly</p>
-                  <hr />
-                  <p className="h2 text-white">$480,321</p>
-                  <p class="h6 text-blue mb-4">yearly</p>
-                  
-                  <ul className="text-grey">
-                    <li className="small">
-                    Approximate total Revenue for your organization after winners split, Causable fees, and averaged taxes.
-                    </li>
-                  </ul>
-
-                  <hr />
-                  <p className="text-grey small">
-                  This revenue is generated with very little effort on your part. Once the game is set up and running it continues to tick along automatically, resetting or continuing depending on if there was winner that particular week.
-                  </p>
-                </Col>
-              </Row>
-            </Col>
-              
-          </Row>
-          
-        </Container>
+        <Calc></Calc>
 
         </main>
 
