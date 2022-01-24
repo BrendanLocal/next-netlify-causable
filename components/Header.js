@@ -23,22 +23,16 @@ export default function Home() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  return (
 
-    <>
-
-<Offcanvas show={show} onHide={handleClose} placement='end'>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>
-          <p className="h6 text-dark-blue">GET STARTED - CONTACT US</p>
-          </Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body className="d-flex flex-column bd-highlight mb-3">
-        <h4 className="alt mb-auto bd-highlight">
-        Interested in increasing your charitable fundraising revenue with Causable?
-          </h4>
-          
-          <Form className="mb-3 bd-highlight">
+  function ContactForm() {
+    const [state, handleSubmit] = useState('{your-form-id}');
+    if (state.succeeded) {
+      return (
+      <div>Thank you for signing up!</div>
+        );
+    }
+    return (
+      <Form className="bd-highlight">
           <Form.Group className="mb-3" controlId="firstLastName">
             <Form.Label className="p small text-dark-blue">FIRST AND LAST NAME</Form.Label>
             <Form.Control type="email" placeholder="" />
@@ -59,7 +53,7 @@ export default function Home() {
             <Form.Control type="email" placeholder="" />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formGridState">
+          <Form.Group className="mb-4" controlId="formGridState">
             <Form.Label className="p small text-dark-blue">EXPECTED NUMBER OF PLAYERS</Form.Label>
             <Form.Select defaultValue="Please select...">
               <option>Please select...</option>
@@ -70,30 +64,41 @@ export default function Home() {
               <option>20,000 +</option>
             </Form.Select>
           </Form.Group>
-          </Form>
-          
-          <Button className="btn btn-blue w-full bd-highlight" onClick={handleClose}>
+          <Button className="btn btn-blue w-full bd-highlight mt-2" type="submit">
             SUBMIT
           </Button>
+          </Form>
+        
+    )
+  }
+
+  return (
+
+    <>
+
+    <Offcanvas show={show} onHide={handleClose} placement='end'>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>
+          <p className="h6 text-dark-blue">GET STARTED - CONTACT US</p>
+          </Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body className="d-flex flex-column bd-highlight mb-3">
+        <h4 className="alt mb-auto bd-highlight">
+        Interested in increasing your charitable fundraising revenue with Causable?
+          </h4>      
+          <ContactForm />    
         </Offcanvas.Body>
       </Offcanvas>
 
-  <Container fluid className="fixed header">
-      
+  <Container fluid className="fixed header">   
       <Row>
-
           <Col>
-
             <Link href="/">
             <img className="logo" src="/CAUSABLElogo.svg" alt="Causablelogo"/>
             </Link>
-
           </Col>
-
-        <Col>
-          
+        <Col>          
          <div className="headerNav">
-         
           <Link href="#why" >
             <a className="text-white">
               Why Causable? 
@@ -120,19 +125,13 @@ export default function Home() {
             </Button>
           </Link>
           </div>
-
           </Col>
-
           <Col>
-
           <Link href="#">
             <img className="chat-btn" src="/chat-btn.svg" alt="Chat button"/>
-            </Link>
-            
+            </Link>        
           </Col>
-
       </Row>
-
   </Container>
 
   </>
