@@ -20,7 +20,6 @@ export default function Calc() {
   const [selectPercent, setPercent] = React.useState("");
   const [selectWeeks, setWeeks] = React.useState("");
 
-
   const playersCount = Number(selectPlayers);
   const priceNum = Number(selectPrice);
   const percentNum = Number(selectPercent);
@@ -43,13 +42,14 @@ export default function Calc() {
   };
 
 
-const resultAnnual = (selectPlayers * selectPrice * (1/selectPercent) * selectWeeks).toFixed(2);
+var resultAnnual = (selectPlayers * selectPrice * (1/selectPercent) * selectWeeks).toFixed(2);
+var resultWeek = 0;
 if (selectPercent > 0){
 
-    const resultWeek = (selectPlayers * selectPrice * (selectPercent/100)).toFixed(2);
+resultWeek = (selectPlayers * selectPrice * (selectPercent/100)).toFixed(2);
 } else {
 
-const resultWeek = (selectPlayers * selectPrice ).toFixed(2);
+resultWeek = (selectPlayers * selectPrice).toFixed(2);
 }
 
   return (
@@ -75,22 +75,22 @@ const resultWeek = (selectPlayers * selectPrice ).toFixed(2);
                   <div className=" mb-md-0 mb-5" >
                     <Form.Group className="mb-3" controlId="formNumberPlayers">
                       <Form.Label className="text-grey p small">Number of weekly players</Form.Label>
-                      <input className="input-alt" size="sm" type="text" placeholder="Enter number" onChange={changePlayers} value={playersCount}/>
+                      <Form.Control className="input-alt" size="sm" type="text" placeholder="Enter number" onChange={changePlayers} value={playersCount}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formTicketPrice">
                       <Form.Label className="text-grey p small">Ticket play price ($)</Form.Label>
-                      <input className="input-alt" size="sm" type="text" placeholder="Enter price"  onChange={changePrice} value={priceNum}/>
+                      <Form.Control className="input-alt" size="sm" type="text" placeholder="Enter price"  onChange={changePrice} value={priceNum}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formPercentPot">
                       <Form.Label className="text-grey p small">Percentage of the pot your organization takes </Form.Label>
-                      <input className="input-alt" size="sm" type="text" placeholder="Enter percentage"  onChange={changePercent} value={percentNum}/>
+                      <Form.Control className="input-alt" size="sm" type="text" placeholder="Enter percentage"  onChange={changePercent} value={percentNum}/>
                     </Form.Group>
 
                     <Form.Group className="mb-4" controlId="formTicketPrice">
                       <Form.Label className="text-grey p small">Number of weeks you will run your game (yearly)</Form.Label>
-                      <input className="input-alt" size="sm" type="text" placeholder="Enter number"  onChange={changeWeeks} value={weeksNum}/>
+                      <Form.Control className="input-alt" size="sm" type="text" placeholder="Enter number"  onChange={changeWeeks} value={weeksNum}/>
                     </Form.Group>
 
                   

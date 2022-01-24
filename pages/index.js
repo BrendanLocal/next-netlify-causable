@@ -340,18 +340,14 @@ export default function Home() {
               <h6 class="text-blue text-tight-drop">STEP 1</h6>
               <p class="lead text-grey text-drop mb-3">Partner with Causable</p>
               <div className="d-none d-sm-block">
-                <Link href="#">
                   <Button className="btn btn-blue tight-drop arrow" onClick={handleShowOffCanvas}>
                     GET STARTED
                   </Button>
-                </Link>
               </div>
               <div className="d-grid gap-2 mb-5">
-                <Link href="#">
                   <Button className="btn btn-blue tight-drop arrow d-block d-sm-none " onClick={handleShowOffCanvas}>
                     GET STARTED
                   </Button>
-                </Link>
               </div>
               <hr />
               <h6 class="text-blue text-tight-drop">STEP 2</h6>
