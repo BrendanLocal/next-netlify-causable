@@ -45,7 +45,7 @@ p.large {
 p.lead {
   font-size: calc(.4rem + 1.5vw)!important;
   line-height: calc(.7rem + 1.5vw)!important;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 p.bold {
