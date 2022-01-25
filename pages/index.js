@@ -15,6 +15,7 @@ import Modal from 'react-bootstrap/Modal';
 import Placeholder from 'react-bootstrap/Placeholder';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Calc from '@components/Calculator';
+import ContactForm from '@components/ContactForm';
 
 
 export default function Home() {
@@ -87,47 +88,8 @@ export default function Home() {
           <p className="h6 text-dark-blue">GET STARTED - CONTACT US</p>
           </Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body className="d-flex flex-column bd-highlight mb-3">
-        <h4 className="alt mb-auto bd-highlight">
-        Interested in increasing your charitable fundraising revenue with Causable?
-          </h4>
-          
-          <Form className="bd-highlight">
-          <Form.Group className="mb-3" controlId="firstLastName">
-            <Form.Label className="p small text-dark-blue">FIRST AND LAST NAME</Form.Label>
-            <Form.Control type="email" placeholder="" />
-          </Form.Group>
-
-          <Form.Group className="mb-3" controlId="orgName">
-            <Form.Label className="p small text-dark-blue">ORGANIZATION NAME</Form.Label>
-            <Form.Control type="email" placeholder="" />
-          </Form.Group>
-
-          <Form.Group className="mb-3" controlId="email">
-            <Form.Label className="p small text-dark-blue">EMAIL ADDRESS</Form.Label>
-            <Form.Control type="email" placeholder="" />
-          </Form.Group>
-
-          <Form.Group className="mb-3" controlId="lodaction">
-            <Form.Label className="p small text-dark-blue">LOCATION</Form.Label>
-            <Form.Control type="email" placeholder="" />
-          </Form.Group>
-
-          <Form.Group className="mb-3" controlId="formGridState">
-            <Form.Label className="p small text-dark-blue">EXPECTED NUMBER OF PLAYERS</Form.Label>
-            <Form.Select defaultValue="Please select...">
-              <option>Please select...</option>
-              <option>Less than 1000</option>
-              <option>1000-5000</option>
-              <option>5000-10,000</option>
-              <option>10,000-20,000</option>
-              <option>20,000 +</option>
-            </Form.Select>
-          </Form.Group>
-          <Button className="btn btn-blue w-full bd-highlight" type="submit">
-            SUBMIT
-          </Button>
-          </Form>
+        <Offcanvas.Body className="d-flex flex-column bd-highlight">
+        <ContactForm></ContactForm>
         
         </Offcanvas.Body>
       </Offcanvas>
