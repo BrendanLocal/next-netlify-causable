@@ -20,32 +20,32 @@ main {
 /* Text Styles */
 
 p {
-  font-size: 16px!important;
+  font-size: 1rem!important;
   letter-spacing: .01rem;
   font-weight: 300;
-  line-height: 21px!important;
+  line-height: 1.4rem!important;
   margin-bottom: 7px!important;
 }
 
 p.small {
-  font-size: 12px!important;
+  font-size: .8rem!important;
   letter-spacing: .01rem;
   font-weight: 300;
-  line-height: 17px!important;
+  line-height: 1.1rem!important;
   margin-bottom: 7px!important;
 }
 
 p.large {
-  font-size: 21px!important;
+  font-size: 1.4rem!important;
   letter-spacing: .01rem;
   font-weight: 300;
-  line-height: 26px!important;
+  line-height: 1.7rem!important;
 }
 
 p.lead {
   font-size: calc(.4rem + 1.5vw)!important;
   line-height: calc(.7rem + 1.5vw)!important;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 p.bold {
@@ -61,17 +61,17 @@ p.bold {
 }
 
 li {
-  font-size: 16px!important;
+  font-size: 1rem!important;
   letter-spacing: .01rem;
   font-weight: 300;
-  line-height: 21px;
+  line-height: 1.4rem;
 }
 
 li.small {
-  font-size: 12px!important;
+  font-size: .8rem!important;
   letter-spacing: .01rem;
   font-weight: 300;
-  line-height: 17px;
+  line-height: 1.1rem!important;
   margin-bottom: 7px!important;
 }
 
@@ -112,15 +112,15 @@ h4, .h4 {
 h4.alt, .h4.alt {
   font-family: 'Interstate', sans-serif;
   font-style: normal;
-  font-size: 29px!important;
-  line-height: 33px!important;
+  font-size: 1.8rem!important;
+  line-height: 2.2rem!important;
 }
 
 h5, .h5 {
   font-family: 'Interstate', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px!important;
+  font-size: 1.1rem!important;
   letter-spacing: .02rem;
 }
 
@@ -129,8 +129,8 @@ h6, .h6 {
   font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px!important;
-  line-height: 14px!important;
+  font-size: .9rem!important;
+  line-height: .9rem!important;
   letter-spacing: .15em!important;
 }
 

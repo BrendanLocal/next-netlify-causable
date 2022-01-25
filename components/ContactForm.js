@@ -47,7 +47,7 @@ return (
             <Form.Control type="email" placeholder="" />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formGridState">
+          <Form.Group className="mb-4" controlId="formGridState">
             <Form.Label className="p small text-dark-blue">EXPECTED NUMBER OF PLAYERS</Form.Label>
             <Form.Select defaultValue="Please select...">
               <option>Please select...</option>
@@ -58,6 +58,7 @@ return (
               <option>20,000 +</option>
             </Form.Select>
           </Form.Group>
+
           <Button className="btn btn-blue w-full bd-highlight" type="submit">
             SUBMIT
           </Button>

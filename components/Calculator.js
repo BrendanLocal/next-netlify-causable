@@ -70,7 +70,6 @@ resultWeek = (selectPlayers * selectPrice).toFixed(2);
                     Numbers are pre-populated to a common scenario
                     </li>
                   </ul>
-                 
                   <hr />
                   <div className=" mb-md-0 mb-5" >
                     <Form.Group className="mb-3" controlId="formNumberPlayers">
@@ -92,8 +91,6 @@ resultWeek = (selectPlayers * selectPrice).toFixed(2);
                       <Form.Label className="text-grey p small">Number of weeks you will run your game (yearly)</Form.Label>
                       <Form.Control className="input-alt" size="sm" type="text" placeholder="Enter number"  onChange={changeWeeks} value={weeksNum}/>
                     </Form.Group>
-
-                  
                 </div>
                 </Col>
                 <Col className="ps-lg-5 ps-md-4">
