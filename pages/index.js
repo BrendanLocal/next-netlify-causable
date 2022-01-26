@@ -70,6 +70,7 @@ export default function Home() {
             <Form.Label className="p small text-dark-blue">LOCATION</Form.Label>
             <Form.Control type="email" placeholder="" />
           </Form.Group>
+          
           <Form.Group className="mb-4" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
