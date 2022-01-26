@@ -19,6 +19,11 @@ import ContactForm from '@components/ContactForm';
 import VideoForm from '@components/VideoForm';
 
 
+window.addEventListener("hashchange", function () {
+  window.scrollTo(window.scrollX, window.scrollY - 100);
+});
+
+
 export default function Home() {
 
   const [showModal, setShowModal] = useState(false);
@@ -115,7 +120,7 @@ export default function Home() {
 
         <Container fluid className="v-full bg-dgnl c-drag align-items-center d-flex px-xl-5 pb-5 mb-5 ">
         
-          <Row id="why" className="justify-content-center align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 pb-5 mx-xl-5 mx-lg-4 pt-md-5">
+          <Row id="why" className="scroll-space justify-content-center align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 pb-5 mx-xl-5 mx-lg-4 pt-md-5">
           
             <Col md={4} sm={12} className="px-xl-5 ps-lg-4 pt-lg-0 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 ">
               <h2 className="text-white text-drop mb-3">Why Causable?</h2>
@@ -148,7 +153,7 @@ export default function Home() {
 
         <Container fluid className="v-full z-0 bg-grad c-drag-3 ps-xl-5 pb-5 mb-5">
         
-          <Row id="what" className="align-items-center d-flex ps-md-5 pt-5 ps-4 pe-lg-0 pe-md-0 pb-5 pb-lg-0 pb-xl-5  ms-xl-5 ms-lg-4">
+          <Row id="what" className="scroll-space align-items-center d-flex ps-md-5 pt-5 ps-4 pe-lg-0 pe-md-0 pb-5 pb-lg-0 pb-xl-5  ms-xl-5 ms-lg-4">
 
             <Col xl={4} lg={5} md={7} sm={12} className="px-xl-5 ps-lg-4 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 pe-5">
               <h6 className="text-blue text-tight-drop mb-3 mt-5">WHAT YOU GET</h6>
@@ -257,7 +262,7 @@ export default function Home() {
 
         <Container fluid className="v-150 bg-dgnl c-drag-2 align-items-center d-flex px-xl-5 pb-5 mb-5">
           
-          <Row id="how" className="align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 py-5 pb-xl-0 mb-xl-0 mx-xl-5 mx-lg-4">
+          <Row id="how" className="scroll-space align-items-center d-flex px-md-5 px-4 pe-lg-0 pe-md-0 py-5 pb-xl-0 mb-xl-0 mx-xl-5 mx-lg-4">
 
             <Col lg={5} md={6} sm={12} className="ps-xl-5 ps-lg-4 pe-lg-0 pe-md-4 py-md-5 mb-md-0 mb-3">
               <h2 className="text-white text-drop mb-3">How To Work With Us</h2>

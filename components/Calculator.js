@@ -55,7 +55,7 @@ resultWeek = (selectPlayers * selectPrice).toFixed(2);
 
     <Container fluid className="v-135 bg-mix c-drag-4 px-xl-5 pb-5">
         
-        <Row id="calculate" className="justify-content-center align-items-center d-flex px-md-5 px-4 mt-3 mx-xl-5 mx-lg-4 mb-5 py-md-5">
+        <Row id="calculate" className="scroll-space justify-content-center align-items-center d-flex px-md-5 px-4 mt-3 mx-xl-5 mx-lg-4 mb-5 py-md-5">
             <Col sm={12} className="px-xl-5 px-lg-4 pt-md-5">
               <h2 className="text-white text-center text-drop mb-3 d-none d-md-block">Calculate Potential Revenue</h2>
               <p className="text-grey text-center mb-4 text-tight-drop d-none d-md-block">Try our revenue calculator to get a sense of what your potential revenue could like with Causable.</p>
@@ -63,12 +63,8 @@ resultWeek = (selectPlayers * selectPrice).toFixed(2);
               <p className="text-grey mb-4 text-tight-drop d-md-none">Try our revenue calculator to get a sense of what your potential revenue could like with Causable.</p>
               <Row className="well">
                 <Col className="brdr-rght pe-lg-5 pe-md-4">
-                  <h4 className="text-white">Enter Raffle Numbers</h4>
-                  <ul className="text-grey">
-                    <li className="small">
-                    Numbers are pre-populated to a common scenario
-                    </li>
-                  </ul>
+                  <h4 className="text-white mb-4">Enter Raffle Numbers</h4>
+                  
                   <hr />
                   <div className=" mb-md-0 mb-5" >
                     <Form.Group className="mb-3" controlId="formNumberPlayers">
