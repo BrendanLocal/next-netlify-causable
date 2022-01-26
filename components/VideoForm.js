@@ -11,6 +11,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
+import ReactPlayer from 'react-player';
 import Button from 'react-bootstrap/Button';
 import Link from 'next/link';
 import FormControl from 'react-bootstrap/FormControl';
@@ -22,11 +23,9 @@ export default function VideoForm () {
     if (state.succeeded) {
         return (
             <>
-            <Row className="justify-content-center p-5">
-                <Col xs={5}>
-                <Image fluid src="/success.svg" alt="Success graphic"></Image>
-                </Col>
-            </Row>
+                
+         <ReactPlayer url='https://www.youtube.com/watch?v=4fezP875xOQ' className="w-full"/>
+
             </>        
         );    
     }
