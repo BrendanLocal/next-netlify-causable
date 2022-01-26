@@ -90,7 +90,7 @@ export default function Footer() {
             </a>
           </Link>
           <Link href="#" >
-            <a className="text-white mx-2 mt-0 pt-0">
+            <a className="text-white mx-2 mt-0 pt-0 d-none">
             Twitter
             </a>
           </Link>
@@ -106,17 +106,17 @@ export default function Footer() {
           <p className="text-white mb-0">©2021 - Causable</p>
           </Col>
           <Col sm={12} className="" >
-          <Link href="#" >
+          <Link href="https://www.facebook.com/Causable.io" >
             <a className="text-white me-2">
               Facebook
             </a>
           </Link>
-          <Link href="#" >
+          <Link href="https://www.instagram.com/causable.io/?hl=en" >
             <a className="text-white mx-2">
               Instagram
             </a>
           </Link>
-          <Link href="#" >
+          <Link href="" >
             <a className="text-white mx-2">
             Twitter
             </a>
