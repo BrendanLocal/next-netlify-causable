@@ -41,8 +41,7 @@ export default function Calc() {
     setWeeks(event.target.value);
   };
 
-
-var resultAnnual = (selectPlayers * selectPrice * (1/selectPercent) * selectWeeks).toFixed(2);
+var resultAnnual = (selectPlayers * selectPrice * (selectPercent/100) * selectWeeks).toFixed(2);
 var resultWeek = 0;
 if (selectPercent > 0){
 
