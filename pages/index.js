@@ -16,6 +16,7 @@ import Placeholder from 'react-bootstrap/Placeholder';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Calc from '@components/Calculator';
 import ContactForm from '@components/ContactForm';
+import VideoForm from '@components/VideoForm';
 
 
 export default function Home() {
@@ -45,41 +46,8 @@ export default function Home() {
         <Modal.Header closeButton className="p-md-4">
           <p className="h6 text-dark-blue pb-0">WATCH DEMO - CONNECT WITH US</p>
         </Modal.Header>
-        <Modal.Body className="p-md-4">
-          <h4 className="mb-4">
-          Connect with us to watch our demo
-          </h4>
-
-          <Form className="mb-0 pb-0 px-md-1" >
-          <Form.Group className="mb-3" controlId="firstLastName">
-            <Form.Label className="p small text-dark-blue">FIRST AND LAST NAME</Form.Label>
-            <Form.Control type="email" placeholder="" />
-          </Form.Group>
-
-          <Form.Group className="mb-3" controlId="orgName">
-            <Form.Label className="p small text-dark-blue">ORGANIZATION NAME</Form.Label>
-            <Form.Control type="email" placeholder="" />
-          </Form.Group>
-
-          <Form.Group className="mb-3" controlId="email">
-            <Form.Label className="p small text-dark-blue">EMAIL ADDRESS</Form.Label>
-            <Form.Control type="email" placeholder="" />
-          </Form.Group>
-
-          <Form.Group className="mb-4" controlId="location">
-            <Form.Label className="p small text-dark-blue">LOCATION</Form.Label>
-            <Form.Control type="email" placeholder="" />
-          </Form.Group>
-          
-          <Form.Group className="mb-4" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group>
-          <Button className="btn btn-blue w-full" type="submit">
-            SEND ME THE DEMO 
-          </Button>
-          </Form>
-         
-
+        <Modal.Body className="p-md-4">  
+         <VideoForm></VideoForm>
         </Modal.Body>
       </Modal>
 
@@ -90,8 +58,7 @@ export default function Home() {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body className="d-flex flex-column bd-highlight">
-        <ContactForm></ContactForm>
-        
+        <ContactForm></ContactForm>    
         </Offcanvas.Body>
       </Offcanvas>
 
