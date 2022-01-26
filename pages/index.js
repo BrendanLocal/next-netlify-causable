@@ -19,10 +19,6 @@ import ContactForm from '@components/ContactForm';
 import VideoForm from '@components/VideoForm';
 
 
-window.addEventListener("hashchange", function () {
-  window.scrollTo(window.scrollX, window.scrollY - 100);
-});
-
 
 export default function Home() {
 

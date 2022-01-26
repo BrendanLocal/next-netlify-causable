@@ -70,11 +70,11 @@ export default function Header() {
               Calculate Potential Revenue
             </a>
           </Link>
-          <Link href="#" >
+          
             <Button className="btn btn-outline tight-drop arrow" onClick={handleShow}>
               GET STARTED
             </Button>
-          </Link>
+          
           </div>
           </Col>
           <Col>
