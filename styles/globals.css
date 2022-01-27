@@ -45,8 +45,8 @@ p.large {
 }
 
 p.lead {
-  font-size: calc(.4rem + 1.5vw)!important;
-  line-height: calc(.7rem + 1.5vw)!important;
+  font-size: calc(.3rem + 1.5vw)!important;
+  line-height: calc(.8rem + 1.5vw)!important;
   font-weight: 300;
 }
 

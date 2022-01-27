@@ -62,7 +62,7 @@ resultWeek = (selectPlayers * selectPrice).toFixed(2);
               <h2 className="text-white text-drop mb-3 d-md-none">Calculate Potential Revenue</h2>
               <p className="text-grey mb-4 text-tight-drop d-md-none">Try our revenue calculator to get a sense of what your potential revenue could like with Causable.</p>
               <Row className="well">
-                <Col className="brdr-rght pe-lg-5 pe-md-4">
+                <Col sm={12} md={6} className="brdr-rght pe-lg-5 pe-md-4">
                   <h4 className="text-white mb-4">Enter Raffle Numbers</h4>
                   
                   <hr />
@@ -88,7 +88,7 @@ resultWeek = (selectPlayers * selectPrice).toFixed(2);
                     </Form.Group>
                 </div>
                 </Col>
-                <Col className="ps-lg-5 ps-md-4">
+                <Col sm={12} md={6} className="ps-lg-5 ps-md-4">
                   <h4 className="text-white mb-4">Potential Revenue</h4>
                   <hr />
                   <p className="h2 text-white">{resultWeek > 0 ? "$" + resultWeek : "$0"}</p>
