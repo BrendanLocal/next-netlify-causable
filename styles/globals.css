@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/vat2ajk.css");
+
 html,
 body {
   background-color: #0C2D48!important;
@@ -76,58 +78,60 @@ li.small {
 }
 
 h1, .h1 {
-  font-family: 'Interstate', sans-serif;
+  font-family: interstate, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700!important;
   font-size: calc(4.3rem + 1.5vw)!important;
   line-height: calc(4.3rem + 1.5vw)!important;
   letter-spacing: -0.03em!important;
 }
 
 h2, .h2 {
-  font-family: 'Interstate', sans-serif;
+  font-family: interstate, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700!important;
   font-size: calc(2.5rem + 1.5vw)!important;
   line-height: calc(2.5rem + 1.5vw)!important;
   letter-spacing: -0.02em!important;
 }
 
 h3, .h3 {
-  font-family: 'Interstate', sans-serif;
+  font-family: interstate, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700!important;
   font-size: calc(1.6rem + 1.5vw)!important;
   line-height: calc(1.6rem + 1.5vw)!important;
   letter-spacing: -0.02em!important;
 }
 
 h4, .h4 {
-  font-family: 'Interstate', sans-serif;
+  font-family: interstate, sans-serif;
   font-style: normal;
+  font-weight: 700!important;
   font-size: calc(.85rem + 1.5vw)!important;
   line-height: calc(1.1rem + 1.5vw)!important;
 }
 
 h4.alt, .h4.alt {
-  font-family: 'Interstate', sans-serif;
+  font-family: interstate, sans-serif;
   font-style: normal;
+  font-weight: 700!important;
   font-size: 1.8rem!important;
   line-height: 2.2rem!important;
 }
 
 h5, .h5 {
-  font-family: 'Interstate', sans-serif;
+  font-family: interstate, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700!important;
   font-size: 1.1rem!important;
   letter-spacing: .02rem;
 }
 
 h6, .h6 {
-  font-family: 'Interstate', sans-serif;
+  font-family: interstate, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700!important;
   text-transform: uppercase;
   font-size: .9rem!important;
   line-height: .9rem!important;
