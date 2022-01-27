@@ -30,8 +30,6 @@ export default function Home() {
   const handleCloseOffCanvas = () => setShowOffCanvas(false);
   const handleShowOffCanvas = () => setShowOffCanvas(true);
 
-
-
   return (
 
     <>

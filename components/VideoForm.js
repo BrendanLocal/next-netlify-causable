@@ -32,11 +32,9 @@ export default function VideoForm () {
 
 return (
     <>
-
     <h4 className="mb-4">
     Connect with us to watch our demo
     </h4>
-
     <Form onSubmit={handleSubmit} className="mb-0 pb-0 px-md-1" >
         <Form.Group className="mb-3" controlId="firstlastname">
             <Form.Label htmlFor="name" className="p small text-dark-blue">FIRST AND LAST NAME</Form.Label>
@@ -76,7 +74,6 @@ return (
         WATCH THE DEMO
         </Button>
     </Form>
-
     </>
     )
 }
