@@ -120,9 +120,9 @@ export default function Home() {
           
             <Col md={4} sm={12} className="px-xl-5 ps-lg-4 pt-lg-0 pt-md-5 mb-lg-5 mb-md-1 mb-0 pb-md-5 pb-2 ">
               <h2 className="text-white text-drop mb-3">Why Causable?</h2>
-              <p className="text-grey mb-3 bold ms-1 text-tight-drop">Causable's electronic raffle technology and marketing platform provides your charitable organizations with unparalleled fundraising capacity in a secure and interactive manner.</p>
+              <p className="text-grey mb-3 bold text-tight-drop">Causable's electronic raffle technology and marketing platform provides your charitable organizations with unparalleled fundraising capacity in a secure and interactive manner.</p>
               <object className="d-block d-sm-none" type="image/svg+xml" data="/Causable-Animation-ENG.svg" alt="Causable platform animation" />
-              <p className="text-grey mb-4 ms-1 text-tight-drop">Our mobile playing app allows anyone in your area to play your electronic raffle via their mobile device or computer --  expanding your raffle's reach and fundraising potential.</p>
+              <p className="text-grey mb-4 text-tight-drop">Our mobile playing app allows anyone in your area to play your electronic raffle via their mobile device or computer --  expanding your raffle's reach and fundraising potential.</p>
               <div className="d-none d-sm-block">
                 <Link href="#what">
                   <Button className="btn btn-outline tight-drop d-arrow mb-md-3 mb-0">
@@ -231,14 +231,14 @@ export default function Home() {
               </ul>
               <div className="d-none d-sm-block">
                 <Link href="#how">
-                  <Button className="btn btn-outline tight-drop d-arrow ms-1 mb-0">
+                  <Button className="btn btn-outline tight-drop d-arrow mb-0">
                     HOW TO WORK WITH US
                   </Button>
                 </Link>
               </div>
               <div className="d-grid gap-2 mb-5">
                 <Link href="#how">
-                  <Button className="btn btn-outline tight-drop d-arrow ms-2 pb-5 mb-0 d-block d-sm-none">
+                  <Button className="btn btn-outline tight-drop d-arrow pb-5 mb-0 d-block d-sm-none">
                   HOW TO WORK WITH US
                   </Button>
                 </Link>
@@ -262,7 +262,7 @@ export default function Home() {
 
             <Col lg={5} md={6} sm={12} className="ps-xl-5 ps-lg-4 pe-lg-0 pe-md-4 py-md-5 mb-md-0 mb-3">
               <h2 className="text-white text-drop mb-3">How To Work With Us</h2>
-              <p className="text-grey mb-3 bold ms-1 text-tight-drop">We have created an innovative solution that will help change the way charities engage their donors. The elegance and ease of use will delight your users and drive revenues to your organization.</p>
+              <p className="text-grey mb-3 bold text-tight-drop">We have created an innovative solution that will help change the way charities engage their donors. The elegance and ease of use will delight your users and drive revenues to your organization.</p>
               <p className="text-grey text-tight-drop mb-2">Along with our partnerships, our business model purposely has created an environment that ensures Causable has a vested interest in your success, a true partnership.</p>
               <p className="text-grey text-tight-drop mb-2">With this innovation comes technical and business complexity. To help us navigate the complexity and create this elegant experience we have partnered with best in class industry leaders for their respective fields - banking, security, identity management, and compliance.</p>
               <p className="text-grey text-tight-drop">For Causable, taking this route comes with inherent costs &amp; overhead, but it also gives stability, peace of mind and most importantly a clear path to success for your organization and for Causable.</p>
@@ -344,7 +344,7 @@ export default function Home() {
         
         </Container>
 
-        <Calc></Calc>
+        <Calc></Calc>       
 
         </main>
 

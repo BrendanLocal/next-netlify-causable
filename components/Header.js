@@ -36,7 +36,6 @@ export default function Header() {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body className="d-flex flex-column bd-highlight">
-    
           <ContactForm></ContactForm>   
         </Offcanvas.Body>
       </Offcanvas>

@@ -50,7 +50,7 @@ export default function ContactForm () {
          <h4 className="alt mb-auto bd-highlight">
         Interested in increasing your charitable fundraising revenue with Causable?
           </h4>              
-        <Form name="contact" onSubmit={handleSubmit} className="mb-3 bd-highlight">
+        <Form name="contact" onSubmit={handleSubmit} className="bd-highlight">
           <Form.Group className="mb-3" controlId="firstlastname">
             <Form.Label htmlFor="name" className="p small text-dark-blue">FIRST AND LAST NAME</Form.Label>
             <Form.Control name="name" type="text" nameplaceholder="" />
