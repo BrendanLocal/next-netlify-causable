@@ -51,12 +51,12 @@ export default function ContactForm () {
         Interested in increasing your charitable fundraising revenue with Causable?
           </h4>              
         <Form name="contact" onSubmit={handleSubmit} className="bd-highlight">
-          <Form.Group className="mb-3" controlId="firstlastname">
-            <Form.Label htmlFor="name" className="p small text-dark-blue">FIRST AND LAST NAME</Form.Label>
+          <Form.Group className="mb-3" controlId="name">
+            <Form.Label htmlFor="full-name" className="p small text-dark-blue">FIRST AND LAST NAME</Form.Label>
             <Form.Control name="name" type="text" nameplaceholder="" />
             <ValidationError 
-              prefix="FirstLastName" 
-              field="firstlastname"
+              prefix="Full-name" 
+              field="full-name"
               errors={state.errors}
             />
           </Form.Group>
@@ -91,7 +91,7 @@ export default function ContactForm () {
             />
           </Form.Group>
 
-          <Form.Group className="mb-4" controlId="formGridState">
+          <Form.Group className="mb-4" controlId="select">
             <Form.Label htmlFor="select" className="p small text-dark-blue">EXPECTED NUMBER OF PLAYERS</Form.Label>
             <Form.Select defaultValue="Please select...">
               <option>Please select...</option>
